@@ -1,0 +1,856 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Majd Salami | SEO, Content &amp; Digital Marketing in Dubai</title>
+<meta name="description" content="Majd Salami: SEO, Arabic and English content, Meta Ads and conversion tracking for UAE e-commerce brands. Case studies with Search Console, GA4 and Ads Manager evidence.">
+<link rel="canonical" href="https://majdsalami.github.io/">
+<link rel="icon" type="image/png" href="favicon.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://majdsalami.github.io/">
+<meta property="og:title" content="Majd Salami | SEO, Content &amp; Digital Marketing">
+<meta property="og:description" content="Majd Salami: SEO, Arabic and English content, Meta Ads and conversion tracking for UAE e-commerce brands. Case studies with Search Console, GA4 and Ads Manager evidence.">
+<meta property="og:image" content="https://majdsalami.github.io/og-cover.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Majd Salami", "url": "https://majdsalami.github.io/", "image": "https://majdsalami.github.io/og-cover.jpg", "jobTitle": "SEO and Digital Marketing Specialist", "address": {"@type": "PostalAddress", "addressLocality": "Dubai", "addressCountry": "AE"}, "knowsLanguage": ["ar", "en"], "sameAs": ["https://www.linkedin.com/in/majd-salami/"]}</script>
+<style>body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+</head>
+<body>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+Arabic:wght@400;500;600&family=Readex+Pro:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: a search-results page about one person. Main column = case studies as results; side column = knowledge panel with profile and contact. */
+:root{
+  --bg:#F3F5F4; --surface:#FFFFFF; --ink:#13201D; --muted:#566560; --line:#DCE3E0;
+  --accent:#0B6F57; --accent-soft:#E1F0EA; --link:#1D4FA8; --mark:#FBE3A0; --mark-ink:#13201D;
+  --f-display:"Readex Pro","IBM Plex Sans Arabic",system-ui,sans-serif;
+  --f-body:"IBM Plex Sans Arabic","Segoe UI",system-ui,sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0E1514; --surface:#151F1D; --ink:#E4ECE9; --muted:#9BABA5; --line:#27342F;
+    --accent:#62C3A7; --accent-soft:#18302A; --link:#9BBCF6; --mark:#5A4614; --mark-ink:#F7E7B8; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0E1514; --surface:#151F1D; --ink:#E4ECE9; --muted:#9BABA5; --line:#27342F;
+  --accent:#62C3A7; --accent-soft:#18302A; --link:#9BBCF6; --mark:#5A4614; --mark-ink:#F7E7B8; color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:15px;line-height:1.6}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--surface)}
+a{color:var(--link)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px}
+.ltr{direction:ltr;unicode-bidi:isolate}
+.wrap{max-width:1120px;margin-inline:auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+
+/* top bar */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--surface);border-bottom:1px solid var(--line)}
+.top-row{display:flex;align-items:center;gap:20px;padding-block:14px 8px}
+.brand{font-family:var(--f-display);font-weight:700;font-size:20px;letter-spacing:-.01em;white-space:nowrap;color:var(--ink);text-decoration:none}
+.brand b{color:var(--accent);font-weight:700}
+.search{flex:1;min-width:0;max-width:620px;display:flex;align-items:center;gap:10px;border:1px solid var(--line);border-radius:999px;padding:9px 16px;background:var(--bg);color:var(--ink)}
+.search svg{flex:none;color:var(--muted)}
+.search span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.lang{display:flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;flex:none;margin-inline-start:auto}
+.lang button{font:500 13px var(--f-body);padding:6px 13px;border:0;background:transparent;color:var(--muted);cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--ink);color:var(--surface)}
+.tabs{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tabs a{padding:8px 12px 9px;font-size:14px;color:var(--muted);text-decoration:none;border-bottom:3px solid transparent;white-space:nowrap}
+.tabs a:hover{color:var(--ink)}
+.tabs a.on{color:var(--accent);border-bottom-color:var(--accent)}
+@media (max-width:680px){
+  .top-row{flex-wrap:wrap;gap:12px}
+  .search{order:3;flex-basis:100%;max-width:none}
+}
+
+/* page grid */
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:56px;padding-block:22px 64px;align-items:start}
+.panel{position:sticky;top:calc(env(safe-area-inset-top,0px) + 124px)}
+@media (max-width:980px){
+  .layout{grid-template-columns:minmax(0,1fr);gap:24px}
+  .panel{position:static;order:-1}
+}
+.count{font-size:13px;color:var(--muted);margin:0 0 16px}
+
+/* featured snippet */
+.featured{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:22px 24px}
+.label{font:500 12px var(--f-mono);letter-spacing:.06em;text-transform:uppercase;color:var(--accent);margin:0 0 8px}
+.answer{font-size:17px;line-height:1.7;margin:0;max-width:65ch}
+.kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:18px;padding-top:16px;border-top:1px solid var(--line)}
+.kpi strong{display:block;font:600 26px/1.1 var(--f-display);font-variant-numeric:tabular-nums;direction:ltr;unicode-bidi:isolate;text-align:start}
+.kpi span{display:block;font-size:12.5px;line-height:1.45;color:var(--muted);margin-top:4px}
+@media (max-width:600px){.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* sections */
+.sec{padding-top:40px;scroll-margin-top:130px}
+.sec>h2{font:600 22px/1.3 var(--f-display);margin:0;text-wrap:balance}
+.sec>.sub{color:var(--muted);font-size:14px;margin:4px 0 4px}
+
+/* result */
+.result{padding-block:22px;border-bottom:1px solid var(--line)}
+.crumb{display:flex;align-items:center;gap:10px;min-width:0}
+.fav{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:var(--accent-soft);color:var(--accent);font:600 13px var(--f-display);flex:none}
+.site{display:flex;flex-direction:column;line-height:1.3;min-width:0}
+.site b{font-weight:500;font-size:14px;color:var(--ink)}
+.site span{font:12px var(--f-mono);color:var(--muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;direction:ltr;unicode-bidi:isolate;text-align:start}
+.result h3{margin:10px 0 4px;font:500 21px/1.35 var(--f-display);text-wrap:balance}
+.result h3 a{color:var(--link);text-decoration:none}
+.result h3 a:hover{text-decoration:underline}
+.meta{font-size:13px;color:var(--muted);margin:0 0 8px}
+.snippet{margin:0 0 12px;max-width:65ch}
+mark{background:var(--mark);color:var(--mark-ink);padding:0 2px;border-radius:2px}
+.did{margin:0 0 14px;padding-inline-start:20px;max-width:65ch}
+.did li{margin-block:5px}
+.did li::marker{color:var(--accent)}
+.did code,.snippet code{font:13px var(--f-mono);background:var(--accent-soft);padding:1px 5px;border-radius:4px;direction:ltr;unicode-bidi:isolate}
+.sitelinks{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 24px;margin:4px 0 12px}
+.sitelinks a{display:block;text-decoration:none;padding:9px 0;border-top:1px solid var(--line);min-width:0}
+.sitelinks a b{display:block;color:var(--link);font-weight:500;font-size:14.5px}
+.sitelinks a:hover b{text-decoration:underline}
+.sitelinks a span{display:block;font:12px var(--f-mono);color:var(--muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;direction:ltr;unicode-bidi:isolate;text-align:start}
+@media (max-width:560px){.sitelinks{grid-template-columns:minmax(0,1fr)}}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tags span{font:12px var(--f-mono);padding:3px 8px;border:1px solid var(--line);border-radius:6px;color:var(--muted)}
+.note{font-size:13px;color:var(--muted);margin:8px 0 0}
+
+/* compact results */
+.mini{padding-block:16px;border-bottom:1px solid var(--line)}
+.mini h4{margin:0;font:500 17px/1.4 var(--f-display);color:var(--ink)}
+.mini .meta{margin:2px 0 6px}
+.mini p{margin:0;max-width:65ch}
+.mini .minilinks{display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:8px;font-size:14px}
+.mini .minilinks a{text-decoration:none}
+.mini .minilinks a:hover{text-decoration:underline}
+
+/* writing samples */
+.samples{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 28px}
+.sample{padding-block:14px;border-bottom:1px solid var(--line);min-width:0}
+.sample .cat{font:12px var(--f-mono);color:var(--accent)}
+.sample a{display:block;font:500 16px/1.5 var(--f-body);color:var(--link);text-decoration:none;margin-top:2px}
+.sample a:hover{text-decoration:underline}
+.sample .gloss{font-size:13px;color:var(--muted);margin:2px 0 0}
+@media (max-width:640px){.samples{grid-template-columns:minmax(0,1fr)}}
+
+/* people also ask */
+.paa{margin-top:8px;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
+.qa{padding:16px 20px;border-top:1px solid var(--line)}
+.qa:first-child{border-top:0}
+.qa h4{margin:0 0 4px;font:500 16px/1.4 var(--f-display)}
+.qa p{margin:0;color:var(--muted);max-width:65ch}
+
+/* experience */
+.timeline{margin:10px 0 0;padding:0;list-style:none}
+.timeline li{display:grid;grid-template-columns:170px minmax(0,1fr);gap:16px;padding-block:12px;border-bottom:1px solid var(--line)}
+.timeline .when{font:13px var(--f-mono);color:var(--muted);font-variant-numeric:tabular-nums;padding-top:2px}
+.timeline .what b{display:block;font-weight:600}
+.timeline .what span{color:var(--muted);font-size:14px}
+@media (max-width:560px){.timeline li{grid-template-columns:minmax(0,1fr);gap:2px}}
+
+/* skills */
+.skills{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 28px;margin-top:12px}
+.skills h4{margin:0 0 8px;font:600 14px var(--f-display)}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chips span{font-size:13px;padding:4px 10px;border-radius:999px;background:var(--surface);border:1px solid var(--line)}
+@media (max-width:560px){.skills{grid-template-columns:minmax(0,1fr)}}
+.certs{margin:10px 0 0;padding-inline-start:20px}
+.certs li{margin-block:4px}
+
+/* in-depth case studies */
+.deep-case{padding-block:26px 30px;border-bottom:1px solid var(--line);scroll-margin-top:130px}
+.deep-case .label{margin:0}
+.deep-case h3{margin:6px 0 4px;font:600 24px/1.3 var(--f-display);text-wrap:balance}
+.deep-case h4{margin:24px 0 6px;font:600 17px/1.4 var(--f-display)}
+.deep-case p{margin:0 0 10px;max-width:65ch}
+.deep-case .kpis{margin:14px 0 4px}
+.deep-case ol,.deep-case ul{margin:0 0 10px;padding-inline-start:22px;max-width:65ch}
+.deep-case li{margin-block:6px}
+.deep-case li::marker{color:var(--accent)}
+.shot{margin:16px 0;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--surface)}
+.shot img{display:block;width:100%;height:auto}
+.shot figcaption{font-size:13px;color:var(--muted);padding:9px 12px;border-top:1px solid var(--line)}
+.shot.narrow{max-width:420px}
+.tbl{overflow-x:auto;margin:8px 0 12px;border:1px solid var(--line);border-radius:10px;background:var(--surface)}
+.tbl table{width:100%;border-collapse:collapse;font-size:14px}
+.tbl th,.tbl td{padding:9px 12px;text-align:start;border-bottom:1px solid var(--line);white-space:nowrap}
+.tbl tr:last-child td{border-bottom:0}
+.tbl th{font-weight:600;font-size:12.5px;color:var(--muted)}
+.tbl td.n{font:13px var(--f-mono);font-variant-numeric:tabular-nums}
+.tbl td.c{font:12.5px var(--f-mono);color:var(--muted)}
+.bars{margin:10px 0 14px;display:grid;gap:8px;max-width:560px}
+.bars .cap{font-size:13px;color:var(--muted);margin:0 0 2px}
+.bar{display:grid;grid-template-columns:130px minmax(0,1fr) 48px;gap:10px;align-items:center;font-size:14px}
+.bar .track{height:10px;border-radius:5px;background:var(--accent-soft);overflow:hidden}
+.bar .fill{height:100%;background:var(--accent);border-radius:5px}
+.bar .v{font:13px var(--f-mono);text-align:end;direction:ltr}
+.deep-link{display:inline-block;margin-top:10px;font-weight:500;text-decoration:none}
+.deep-link:hover{text-decoration:underline}
+
+/* knowledge panel */
+.kp{background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.kp-head{display:flex;gap:14px;align-items:center;padding:20px;border-bottom:1px solid var(--line)}
+.avatar{width:76px;height:76px;border-radius:50%;background:var(--line);flex:none;overflow:hidden}
+.avatar img{display:block;width:100%;height:100%;object-fit:cover}
+.kp h1{margin:0;font:600 24px/1.2 var(--f-display)}
+.kp .role{margin:3px 0 0;color:var(--muted);font-size:14px}
+.kp-body{padding:16px 20px 18px}
+.kp-desc{margin:0 0 14px;font-size:14.5px}
+.facts{margin:0;display:grid;gap:7px;font-size:14px}
+.facts div{display:grid;grid-template-columns:auto minmax(0,1fr);gap:8px}
+.facts dt{font-weight:600}
+.facts dd{margin:0;color:var(--muted)}
+.kp h5{margin:16px 0 6px;font:600 13px var(--f-display);color:var(--muted)}
+.contact{display:grid;gap:8px}
+.crow{display:flex;align-items:center;gap:8px;min-width:0}
+.crow .v{flex:1;min-width:0;font:13.5px var(--f-mono);user-select:all;overflow-wrap:anywhere;direction:ltr;unicode-bidi:isolate;text-align:start}
+.copy{flex:none;font:500 12px var(--f-body);padding:4px 10px;border-radius:999px;border:1px solid var(--line);background:var(--bg);color:var(--ink);cursor:pointer}
+.copy:hover{border-color:var(--accent)}
+.links{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.links a{font-size:13.5px;font-weight:500;text-decoration:none;padding:7px 12px;border-radius:8px;border:1px solid var(--line);color:var(--ink)}
+.links a.primary{background:var(--accent);border-color:var(--accent);color:var(--surface)}
+.links a:hover{border-color:var(--accent)}
+
+/* contact section */
+.contact-band{margin-top:12px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.cbox{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px 16px;min-width:0}
+.cbox small{display:block;color:var(--muted);font-size:12.5px}
+.cbox .v{display:block;font:14px var(--f-mono);margin-top:2px;overflow-wrap:anywhere;direction:ltr;unicode-bidi:isolate;text-align:start}
+.cbox a{text-decoration:none}
+@media (max-width:640px){.contact-band{grid-template-columns:minmax(0,1fr)}}
+footer{padding-block:20px 40px;color:var(--muted);font-size:13px;border-top:1px solid var(--line)}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+</style>
+
+<div id="app" dir="ltr" lang="en">
+  <header class="top">
+    <div class="wrap">
+      <div class="top-row">
+        <a class="brand" href="#top" aria-label="Majd Salami">majd<b>·</b>salami</a>
+        <div class="search" role="img" aria-label="search">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+          <span data-t="query"></span>
+        </div>
+        <div class="lang" role="group" aria-label="Language">
+          <button type="button" id="btn-en" data-lang="en">EN</button>
+          <button type="button" id="btn-ar" data-lang="ar">العربية</button>
+        </div>
+      </div>
+      <nav class="tabs" id="tabs" aria-label="Sections"></nav>
+    </div>
+  </header>
+
+  <div class="wrap" id="top">
+    <div class="layout">
+      <main>
+        <p class="count" data-t="count"></p>
+        <section class="featured" aria-labelledby="f-label">
+          <p class="label" id="f-label" data-t="inShort"></p>
+          <p class="answer" data-t="answer"></p>
+          <div class="kpis" id="kpis"></div>
+        </section>
+
+        <section class="sec" id="work">
+          <h2 data-t="workH"></h2>
+          <p class="sub" data-t="workSub"></p>
+          <div id="cases"></div>
+        </section>
+
+        <section class="sec" id="deep">
+          <h2 data-t="deepH"></h2>
+          <p class="sub" data-t="deepSub"></p>
+          <div id="deepCases"></div>
+        </section>
+
+        <section class="sec" id="writing">
+          <h2 data-t="writingH"></h2>
+          <p class="sub" data-t="writingSub"></p>
+          <div class="samples" id="samples"></div>
+          <p class="note" data-t="writingNote"></p>
+        </section>
+
+        <section class="sec" id="earlier">
+          <h2 data-t="earlierH"></h2>
+          <div id="earlierList"></div>
+        </section>
+
+        <section class="sec" id="faq">
+          <h2 data-t="paaH"></h2>
+          <div class="paa" id="paa"></div>
+        </section>
+
+        <section class="sec" id="experience">
+          <h2 data-t="expH"></h2>
+          <ul class="timeline" id="timeline"></ul>
+        </section>
+
+        <section class="sec" id="skills">
+          <h2 data-t="skillsH"></h2>
+          <div class="skills" id="skillGroups"></div>
+          <h2 style="font-size:17px;margin-top:28px" data-t="certsH"></h2>
+          <ul class="certs" id="certs"></ul>
+        </section>
+
+        <section class="sec" id="contact">
+          <h2 data-t="contactH"></h2>
+          <p class="sub" data-t="contactSub"></p>
+          <div class="contact-band" id="contactBand"></div>
+        </section>
+      </main>
+
+      <aside class="panel" aria-label="Profile">
+        <div class="kp" id="kp"></div>
+      </aside>
+    </div>
+  </div>
+
+  <footer>
+    <div class="wrap" data-t="footer"></div>
+  </footer>
+</div>
+
+<script>
+const CONTACT = {
+  email: "mjd.salami1@gmail.com",
+  phone: "+971 58 578 1585",
+  whatsapp: "https://wa.me/971585781585",
+  linkedin: "https://www.linkedin.com/in/majd-salami/"
+};
+const PHOTO = "data:image/jpeg;base64,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";
+
+const UI = {
+  query:{en:"majd salami seo content marketing uae",ar:"مجد سلامي سيو كتابة محتوى تسويق الإمارات"},
+  count:{en:"About 2,000+ published articles · 2,850+ ad-driven purchases · SEO since 2012",ar:"نحو 2,000+ مقال منشور · 2,850+ عملية شراء من الإعلانات · سيو منذ 2012"},
+  inShort:{en:"In short",ar:"باختصار"},
+  answer:{
+    en:"I plan and run digital growth for UAE brands: technical and e-commerce **SEO**, **bilingual Arabic and English content**, **Meta Ads**, and GA4, GTM and Meta Pixel **tracking** that ties ad spend to orders. Most recently I built Freshety's full marketing setup from zero, and I run SEO, ads and social media for the Um Hamza online store.",
+    ar:"أخطط وأنفّذ النمو الرقمي لعلامات تجارية في الإمارات: **سيو** تقني وسيو للمتاجر، **محتوى بالعربية والإنجليزية**، **إعلانات Meta**، و**تتبّع** عبر GA4 وGTM وMeta Pixel يربط الإنفاق الإعلاني بالطلبات. آخر أعمالي بناء البنية التسويقية الكاملة لمتجر «فريشتي» من الصفر، وإدارة السيو والإعلانات والسوشال ميديا لمتجر «أم حمزة»."
+  },
+  tabs:[
+    {id:"top",en:"All",ar:"الكل"},
+    {id:"work",en:"Case studies",ar:"دراسات حالة"},
+    {id:"deep",en:"Deep dives",ar:"دراسات مفصّلة"},
+    {id:"writing",en:"Writing",ar:"الكتابة"},
+    {id:"experience",en:"Experience",ar:"الخبرة"},
+    {id:"skills",en:"Skills",ar:"المهارات"},
+    {id:"contact",en:"Contact",ar:"تواصل"}
+  ],
+  workH:{en:"Case studies",ar:"دراسات حالة"},
+  workSub:{en:"Recent work, with live links you can check.",ar:"أعمال حديثة مع روابط مباشرة يمكن التحقق منها."},
+  deepH:{en:"Deep dives",ar:"دراسات حالة مفصّلة"},
+  deepSub:{en:"How the work was done, with screenshots from Meta Ads Manager, Google Search Console and GA4.",ar:"كيف تم العمل، مع لقطات من مدير إعلانات Meta وGoogle Search Console وGA4."},
+  readCase:{en:"Read the full case study ↓",ar:"اقرأ دراسة الحالة كاملة ↓"},
+  writingH:{en:"Writing samples",ar:"نماذج من الكتابة"},
+  writingSub:{en:"A selection from four Arabic publishers. The articles are in Arabic.",ar:"مختارات من مقالاتي المنشورة في أربعة مواقع عربية."},
+  writingNote:{en:"Byline: مجد سلامي on Almerja, WikiGulf and WikiKuwait; مجد سلامة on Mhtwyat.",ar:"اسم الكاتب: «مجد سلامي» في المرجع وويكي الخليج وويكي الكويت، و«مجد سلامة» في محتويات."},
+  earlierH:{en:"Earlier SEO and social media work",ar:"أعمال سابقة في السيو والسوشال ميديا"},
+  paaH:{en:"People also ask",ar:"أسئلة شائعة"},
+  expH:{en:"Experience",ar:"الخبرة العملية"},
+  skillsH:{en:"Skills and tools",ar:"المهارات والأدوات"},
+  certsH:{en:"Certifications and awards",ar:"الشهادات والجوائز"},
+  contactH:{en:"Contact",ar:"تواصل"},
+  contactSub:{en:"Based in Dubai. Email or WhatsApp is the fastest way to reach me.",ar:"مقيم في دبي. البريد الإلكتروني أو واتساب أسرع طريقة للتواصل."},
+  copy:{en:"Copy",ar:"نسخ"},
+  copied:{en:"Copied",ar:"تم النسخ"},
+  footer:{en:"Majd Salami · Dubai, UAE · Updated October 2026",ar:"مجد سلامي · دبي، الإمارات · آخر تحديث أكتوبر 2026"},
+  results:{en:"Results",ar:"النتائج"}
+};
+
+const KPIS = [
+  {n:"2,000+",en:"Arabic SEO articles written and optimized",ar:"مقال عربي متوافق مع السيو، كتابةً وتحسينًا"},
+  {n:"1,100+",en:"articles you can open today on 4 public author pages",ar:"مقال يمكن فتحه الآن على 4 صفحات كاتب عامة"},
+  {n:"2,850+",en:"website purchases from Meta Ads I managed for Um Hamza",ar:"عملية شراء من إعلانات Meta التي أديرها لمتجر أم حمزة"},
+  {n:"4.0x",en:"blended return on AED 158K+ ad spend",ar:"عائد على إنفاق إعلاني تجاوز 158 ألف درهم"}
+];
+
+const CASES = [
+  {
+    fav:"U", site:"Um Hamza", crumb:"umhamzah.com", href:"https://umhamzah.com/", deep:"uh-case",
+    title:{en:"Um Hamza: Meta Ads, SEO and social media for a UAE artisanal food brand",ar:"أم حمزة: إعلانات Meta والسيو والسوشال ميديا لعلامة أغذية تراثية في الإمارات"},
+    meta:{en:"Digital Marketing and SEO Specialist (full-time) · Oct 2024 – present",ar:"Digital Marketing and SEO Specialist (دوام كامل) · أكتوبر 2024 – حتى الآن"},
+    snippet:{
+      en:"A family food maker in Ajman (factory opened 2015, products on the market since 1999) with 10+ categories, from labneh and pickles to frozen meal bundles, delivering to all seven emirates through a **bilingual WooCommerce store**. I run **paid social, SEO, store optimization and tracking**.",
+      ar:"مصنع أغذية عائلي في عجمان (افتُتح المصنع 2015، والمنتجات في السوق منذ 1999) بأكثر من 10 فئات، من اللبنة والمخللات إلى باقات الوجبات المجمدة، ويوصل إلى الإمارات السبع عبر **متجر ووكومرس بلغتين**. أدير **الإعلانات المدفوعة والسيو وتحسين المتجر والتتبّع**."
+    },
+    did:{
+      en:[
+        "Plan and run Meta Ads across sales, catalog and retargeting campaigns, moving budget to what converts. The top campaign reached 823 purchases at AED 44 each and a 5.0x ROAS.",
+        "Build landing pages and improve WooCommerce product pages, navigation and checkout.",
+        "Technical and on-page SEO: metadata, internal linking, Core Web Vitals and page speed.",
+        "Create product bundles and quantity offers, such as twin packs and daily and weekly frozen meal bundles.",
+        "Manage content for Instagram, TikTok and Snapchat.",
+        "Configure GA4 and Meta Pixel for conversion reporting and attribution."
+      ],
+      ar:[
+        "تخطيط وإدارة حملات Meta للمبيعات والكتالوج وإعادة الاستهداف، وتوجيه الميزانية إلى ما يحقق تحويلات. أفضل حملة حققت 823 عملية شراء بتكلفة 44 درهمًا للعملية وعائد 5.0 أضعاف.",
+        "بناء صفحات هبوط وتحسين صفحات المنتجات والتنقل وخطوات الدفع في ووكومرس.",
+        "سيو تقني وداخلي: الميتا، الروابط الداخلية، Core Web Vitals وسرعة الصفحات.",
+        "تصميم باقات وعروض كميات، مثل عروض العبوتين وباقات الوجبات المجمدة اليومية والأسبوعية.",
+        "إدارة المحتوى على إنستغرام وتيك توك وسناب شات.",
+        "إعداد GA4 وMeta Pixel لتقارير التحويل والإسناد."
+      ]
+    },
+    results:[
+      {n:"AED 158K+",en:"Meta ad spend managed, Jun 2025 – Oct 2026",ar:"إنفاق إعلاني على Meta تمت إدارته، يونيو 2025 – أكتوبر 2026"},
+      {n:"2,850+",en:"website purchases from 32 campaigns (Meta-reported)",ar:"عملية شراء من 32 حملة (حسب تقارير Meta)"},
+      {n:"4.0x",en:"blended return on ad spend",ar:"عائد إجمالي على الإنفاق الإعلاني"},
+      {n:"~40%",en:"of tracked store revenue from organic search and organic social (GA4)",ar:"من إيرادات المتجر المتتبَّعة من البحث العضوي والسوشال العضوي (GA4)"}
+    ],
+    links:[
+      {en:"Live store",ar:"المتجر",url:"https://umhamzah.com/"},
+      {en:"Arabic store",ar:"المتجر بالعربية",url:"https://umhamzah.com/ar/"},
+      {en:"Instagram",ar:"إنستغرام",url:"https://www.instagram.com/umhamzahfoodstuff/"},
+      {en:"Facebook",ar:"فيسبوك",url:"https://www.facebook.com/umhamzaforfoodstuff"}
+    ],
+    tags:["Meta Ads","Catalog ads","Retargeting","WooCommerce","Technical SEO","GA4"]
+  },
+  {
+    fav:"F", site:"Freshety", crumb:"freshety.com › about", href:"https://www.freshety.com/",
+    title:{en:"Freshety: building a Dubai fresh-food store's marketing setup from zero",ar:"فريشتي: بناء البنية التسويقية لمتجر أغذية طازجة في دبي من الصفر"},
+    meta:{en:"Brand and Digital Marketing Manager (freelance project) · I A T Trading L.L.C · Mar – Sep 2026 · Setup and handover",ar:"Brand and Digital Marketing Manager (مشروع عمل حر) · I A T Trading L.L.C · مارس – سبتمبر 2026 · تأسيس وتسليم"},
+    snippet:{
+      en:"A new UAE online store for fresh chicken (Al Balad brand) needed everything before its first campaign: brand, **bilingual content and SEO**, ad accounts and **full purchase tracking**. I built that foundation and handed it over ready to run. This case shows setup work, not campaign results.",
+      ar:"متجر إلكتروني جديد في الإمارات للدجاج الطازج (علامة البلد) احتاج إلى كل شيء قبل أول حملة: الهوية، و**المحتوى والسيو باللغتين**، والحسابات الإعلانية، و**تتبّع كامل لعمليات الشراء**. بنيت هذا الأساس وسلّمته جاهزًا للتشغيل. هذه الحالة تعرض أعمال التأسيس وليس نتائج حملات."
+    },
+    did:{
+      en:[
+        "Created the Meta Business portfolio and ad account for Facebook and Instagram, plus the pages and the WhatsApp channel.",
+        "Led visual identity work with graphic designers and kept the brand consistent on every touchpoint.",
+        "Wrote the Arabic and English website content with on-page SEO, including descriptions for 15+ chicken products.",
+        "Set up Google Tag Manager, GA4, Google Search Console and Meta Pixel on the Next.js site, and tested the purchase-funnel events: `view_item`, `select_item`, `begin_checkout`, `purchase`.",
+        "Handed over a launch-ready setup: content, SEO, tracking and ad accounts."
+      ],
+      ar:[
+        "إنشاء Meta Business Portfolio والحساب الإعلاني لفيسبوك وإنستغرام، مع الصفحات وقناة واتساب.",
+        "قيادة تطوير الهوية البصرية مع المصممين والحفاظ على اتساق العلامة في كل نقاط التواصل.",
+        "كتابة محتوى الموقع بالعربية والإنجليزية مع السيو الداخلي، ومنه أوصاف أكثر من 15 منتج دجاج.",
+        "إعداد Google Tag Manager وGA4 وGoogle Search Console وMeta Pixel على موقع Next.js، واختبار أحداث مسار الشراء: `view_item` و`select_item` و`begin_checkout` و`purchase`.",
+        "تسليم بنية جاهزة للتشغيل: المحتوى، والسيو، والتتبّع، والحسابات الإعلانية."
+      ]
+    },
+    results:[],
+    links:[
+      {en:"Live store",ar:"المتجر",url:"https://www.freshety.com/"},
+      {en:"About page",ar:"صفحة «من نحن»",url:"https://www.freshety.com/about"},
+      {en:"Instagram",ar:"إنستغرام",url:"https://www.instagram.com/freshetyuae/"},
+      {en:"Facebook",ar:"فيسبوك",url:"https://www.facebook.com/freshetyuae/"}
+    ],
+    tags:["Brand setup","Bilingual copy","On-page SEO","GA4","GTM","Search Console","Meta Pixel"]
+  },
+  {
+    fav:"م", site:"Almerja · Mhtwyat · WikiGulf · WikiKuwait", crumb:"almrj3.com › author › majd-salami", href:"https://almrj3.com/author/majd-salami/",
+    title:{en:"2,000+ Arabic SEO articles for Gulf search audiences",ar:"أكثر من 2,000 مقال عربي متوافق مع السيو لجمهور الخليج"},
+    meta:{en:"Freelance Arabic SEO Content Writer · Almerja, Mhtwyat, WikiGulf, WikiKuwait · 2019 – present",ar:"Freelance Arabic SEO Content Writer · المرجع، محتويات، ويكي الخليج، ويكي الكويت · 2019 – حتى الآن"},
+    snippet:{
+      en:"Search-intent articles that answer what Gulf readers actually type: how to apply, what it costs, which number to call, where the nearest branch is. **1,100+ of them** are listed on public author pages: **Almerja 590+**, **Mhtwyat 360+**, **WikiGulf 170+**, plus WikiKuwait.",
+      ar:"مقالات مبنية على نية البحث تجيب عمّا يكتبه القارئ الخليجي فعلًا: كيف أقدّم، كم السعر، ما الرقم الموحد، وأين أقرب فرع. **أكثر من 1,100 منها** منشورة على صفحات كاتب عامة: **المرجع 590+**، و**محتويات 360+**، و**ويكي الخليج 170+**، إضافة إلى ويكي الكويت."
+    },
+    did:{
+      en:[
+        "Keyword research and outlines built around search intent and featured-snippet formats.",
+        "Topics: government services, universities and admissions, banking and stocks, e-commerce and shipping, cars, and the Ramadan and Hajj seasons.",
+        "Guided 5+ writers, audited content quality, and supported white-hat link building."
+      ],
+      ar:[
+        "بحث الكلمات المفتاحية وبناء هيكل المقال حسب نية البحث وصيغ المقتطفات المميزة.",
+        "المواضيع: الخدمات الحكومية، الجامعات والقبول، البنوك والأسهم، التجارة الإلكترونية والشحن، السيارات، ومواسم رمضان والحج.",
+        "توجيه أكثر من 5 كتّاب، ومراجعة جودة المحتوى، ودعم بناء الروابط بأساليب نظيفة."
+      ]
+    },
+    results:[],
+    links:[
+      {en:"Almerja author page · 591 articles",ar:"صفحتي في المرجع · 591 مقالًا",url:"https://almrj3.com/author/majd-salami/"},
+      {en:"Mhtwyat author page · 367 articles",ar:"صفحتي في محتويات · 367 مقالًا",url:"https://mhtwyat.com/author/majd-salamah/"},
+      {en:"WikiGulf author page · 177 articles",ar:"صفحتي في ويكي الخليج · 177 مقالًا",url:"https://wikigulf.com/author/majd-salami/"},
+      {en:"WikiKuwait author page",ar:"صفحتي في ويكي الكويت",url:"https://wikikuwait.com/author/majd-salami/"}
+    ],
+    tags:["Arabic SEO","Search intent","Keyword research","Gulf audience","Editorial QA"]
+  }
+];
+
+const DEEP = [
+  {
+    id:"uh-case",
+    eyebrow:{en:"Performance marketing · E-commerce",ar:"تسويق الأداء · متجر إلكتروني"},
+    title:{en:"Um Hamza: growing a family food brand's online sales with Meta Ads",ar:"أم حمزة: تنمية مبيعات علامة أغذية عائلية أونلاين بإعلانات Meta"},
+    meta:{en:"umhamzah.com · Full-time since Oct 2024 · Data: Jun 2025 – Oct 2026 from Meta Ads Manager, GA4 and Instagram",ar:"umhamzah.com · دوام كامل منذ أكتوبر 2024 · البيانات: يونيو 2025 – أكتوبر 2026 من مدير إعلانات Meta وGA4 وإنستغرام"},
+    kpis:[
+      {n:"AED 158K+",en:"ad spend managed",ar:"إنفاق إعلاني تمت إدارته"},
+      {n:"2,850+",en:"website purchases (Meta-reported)",ar:"عملية شراء من الموقع (حسب Meta)"},
+      {n:"4.0x",en:"blended ROAS across 32 campaigns",ar:"عائد إجمالي على الإنفاق في 32 حملة"},
+      {n:"AED 55",en:"average cost per purchase",ar:"متوسط تكلفة عملية الشراء"}
+    ],
+    blocks:[
+      {h:{en:"Starting point",ar:"نقطة البداية"}},
+      {p:{en:"Um Hamza is a family food maker in Ajman, selling since 1999, with a WooCommerce store that delivers to all seven emirates. When I joined in October 2024, the brand needed steady online orders instead of occasional spikes, and a clear view of which ads actually sell.",ar:"أم حمزة مصنع أغذية عائلي في عجمان، منتجاته في السوق منذ 1999، ولديه متجر ووكومرس يوصل إلى الإمارات السبع. عند انضمامي في أكتوبر 2024 كان المطلوب طلبات أونلاين ثابتة بدل الارتفاعات المتقطعة، ورؤية واضحة لأي إعلان يبيع فعلًا."}},
+      {h:{en:"How the ad account is built",ar:"كيف بُني الحساب الإعلاني"}},
+      {p:{en:"Each stage of the funnel has its own campaign, budget and creative, so every result can be traced to one decision.",ar:"لكل مرحلة من القمع حملتها وميزانيتها وإبداعها الخاص، حتى تُنسب كل نتيجة إلى قرار واحد."}},
+      {table:{
+        head:{en:["Funnel stage","Campaign","Purchases","ROAS","Cost / purchase"],ar:["مرحلة القمع","الحملة","المشتريات","العائد","تكلفة الشراء"]},
+        rows:[
+          [{en:"Scale (CBO)",ar:"التوسّع (CBO)"},"UM_HAMZA_SALES_CBO_300AED-28","823","5.01x","AED 44"],
+          [{en:"Influencer video",ar:"فيديو المؤثرين"},"New Sales Campaign-influence","237","4.71x","AED 47"],
+          [{en:"Catalog",ar:"الكتالوج"},"cataloge-sales-new","189","3.36x","AED 63"],
+          [{en:"Lookalike audience",ar:"جمهور مشابه"},"LOOKLIKE_75AED_18","122","4.90x","AED 45"],
+          [{en:"Frozen range launch",ar:"إطلاق المجمدات"},"RET | SALES | FROZEN LAUNCH","65","4.30x","AED 44"],
+          [{en:"Retargeting buyers (180 days)",ar:"إعادة استهداف المشترين (180 يومًا)"},"RT | Purchasers 180d | Static","27","5.13x","AED 41"]
+        ]
+      }},
+      {fig:{src:"img/uh-ads.jpg",w:1254,h:522,cap:{en:"Meta Ads Manager, 1 Jun 2025 – 27 Oct 2026, sorted by spend. Revenue columns are hidden on purpose.",ar:"مدير إعلانات Meta، 1 يونيو 2025 – 27 أكتوبر 2026، مرتبة حسب الإنفاق. أعمدة الإيرادات مخفية عمدًا."}}},
+      {h:{en:"What the data taught me",ar:"ما تعلّمته من الأرقام"}},
+      {list:{
+        en:[
+          "Consolidating budget into one CBO campaign scaled it to 823 purchases at AED 44 each, the lowest cost of any large campaign.",
+          "Video beats static for cold audiences: the relaunched winning video returned 7.9x and the influencer campaign 4.7x.",
+          "Past buyers are the most efficient audience: retargeting 180-day purchasers returned 5.1x at AED 41 per purchase."
+        ],
+        ar:[
+          "تجميع الميزانية في حملة CBO واحدة رفعها إلى 823 عملية شراء بتكلفة 44 درهمًا للعملية، وهي الأقل بين الحملات الكبيرة.",
+          "الفيديو يتفوّق على التصاميم الثابتة مع الجمهور الجديد: إعادة إطلاق الفيديو الرابح حققت عائد 7.9 أضعاف، وحملة المؤثرين 4.7 أضعاف.",
+          "المشترون السابقون هم الجمهور الأكفأ: إعادة استهدافهم خلال 180 يومًا حققت 5.1 أضعاف بتكلفة 41 درهمًا للعملية."
+        ]
+      }},
+      {h:{en:"Store and organic channels",ar:"المتجر والقنوات المجانية"}},
+      {p:{en:"Paid traffic only pays off if the store converts. Alongside the ads I worked on product pages, navigation, checkout and on-page SEO. In GA4, organic search and organic social now bring about 40% of tracked store revenue.",ar:"الزيارات المدفوعة لا تربح إلا إذا كان المتجر يحوّل. إلى جانب الإعلانات عملت على صفحات المنتجات والتنقل وخطوات الدفع والسيو الداخلي. في GA4 يجلب البحث العضوي والسوشال العضوي اليوم نحو 40% من إيرادات المتجر المتتبَّعة."}},
+      {bars:{
+        cap:{en:"Share of tracked store revenue by channel, GA4, Jun 2025 – Oct 2026",ar:"حصة كل قناة من إيرادات المتجر المتتبَّعة، GA4، يونيو 2025 – أكتوبر 2026"},
+        rows:[[{en:"Paid social",ar:"السوشال المدفوع"},36.9],[{en:"Direct",ar:"مباشر"},22.1],[{en:"Organic social",ar:"السوشال العضوي"},22.0],[{en:"Organic search",ar:"البحث العضوي"},17.7],[{en:"Other",ar:"أخرى"},1.3]]
+      }},
+      {fig:{src:"img/uh-before.jpg",w:1400,h:248,cap:{en:"March 2025, archived by the Wayback Machine: English only, with a short menu.",ar:"مارس 2025 من أرشيف Wayback Machine: باللغة الإنجليزية فقط وبقائمة قصيرة."}}},
+      {fig:{src:"img/uh-after.jpg",w:1400,h:366,cap:{en:"October 2026: Arabic version, new categories such as Frozen Foods, and a keyword-led H1.",ar:"أكتوبر 2026: نسخة عربية، وفئات جديدة مثل المجمدات، وعنوان H1 مبني على الكلمات المفتاحية."}}},
+      {h:{en:"Social content",ar:"محتوى السوشال ميديا"}},
+      {p:{en:"I plan and publish content for Instagram, TikTok and Snapchat: product guides, price posts, launches and event announcements such as the Global Village shop. The Instagram account has 55.6K followers and 827 posts.",ar:"أخطط وأنشر المحتوى على إنستغرام وتيك توك وسناب شات: أدلة المنتجات، ومنشورات الأسعار، والإطلاقات، وإعلانات الفعاليات مثل محل القرية العالمية. حساب إنستغرام فيه 55.6 ألف متابع و827 منشورًا."}},
+      {fig:{src:"img/uh-instagram-grid.jpg",w:1126,h:632,cap:{en:"Recent Instagram posts: product guides, offers and the Global Village shop launch.",ar:"منشورات حديثة على إنستغرام: أدلة المنتجات والعروض وافتتاح محل القرية العالمية."}}}
+    ]
+  },
+  {
+    id:"oz-case",
+    eyebrow:{en:"SEO · Service page and articles",ar:"سيو · صفحة خدمة ومقالات"},
+    title:{en:"OZONE: getting a Dubai web design service found in UAE search",ar:"أوزون: إظهار خدمة تصميم المواقع في بحث Google بالإمارات"},
+    meta:{en:"ozs.ae · Apr – Oct 2026 · Sources: Google Search Console, GA4, Google UAE results",ar:"ozs.ae · أبريل – أكتوبر 2026 · المصادر: Google Search Console وGA4 ونتائج Google في الإمارات"},
+    kpis:[
+      {n:"+64%",en:"organic clicks, last 3 months vs the 3 before",ar:"نقرات عضوية، آخر 3 أشهر مقابل الـ3 السابقة"},
+      {n:"+76%",en:"organic clicks from the UAE (140 → 247)",ar:"نقرات عضوية من الإمارات (140 ← 247)"},
+      {n:"2 → 18",en:"clicks on web design keywords",ar:"نقرة على كلمات تصميم المواقع"},
+      {n:"71%",en:"of site conversions came from organic search",ar:"من تحويلات الموقع جاءت من البحث العضوي"}
+    ],
+    blocks:[
+      {h:{en:"The goal",ar:"الهدف"}},
+      {p:{en:"OZONE Digital Solutions is a Dubai software company founded in 2004. The goal: when a business in the UAE searches for a web design company, in Arabic or English, OZONE should appear on the first page.",ar:"أوزون للحلول الرقمية شركة برمجيات في دبي تأسست عام 2004. الهدف: عندما تبحث شركة في الإمارات عن شركة تصميم مواقع، بالعربية أو الإنجليزية، تظهر أوزون في الصفحة الأولى."}},
+      {h:{en:"What we worked on",ar:"ما عملنا عليه"}},
+      {steps:{
+        en:[
+          "**Service page rebuilt around search intent.** The English and Arabic web development pages put \"Dubai and the UAE\" in the title and H1, and answer buyer questions in 10 sections: what the service is, who needs it, website types, process, cost factors and FAQ.",
+          "**Structured data.** Service, Organization, location details, BreadcrumbList and FAQPage on the service pages, and BlogPosting on articles. Search Console reports valid breadcrumbs on 74 pages.",
+          "**Supporting articles.** Arabic articles cover city and intent variations (Dubai, the UAE, medical websites, Jeddah, a 2026 buyer's guide), and each links back to the service page.",
+          "**Local targeting.** Dubai and the UAE added to titles, headings and copy, with hreflang linking the Arabic and English versions."
+        ],
+        ar:[
+          "**إعادة بناء صفحة الخدمة حول نية البحث.** صفحتا تطوير المواقع بالعربية والإنجليزية تضعان «دبي والإمارات» في العنوان وH1، وتجيبان عن أسئلة العميل في 10 أقسام: تعريف الخدمة، ومن يحتاجها، وأنواع المواقع، وخطوات العمل، وما يحدد التكلفة، والأسئلة الشائعة.",
+          "**البيانات المنظمة (Schema).** Service وOrganization وبيانات الموقع الجغرافي وBreadcrumbList وFAQPage في صفحات الخدمة، وBlogPosting في المقالات. يظهر في Search Console مسار تنقل صالح في 74 صفحة.",
+          "**مقالات داعمة.** مقالات عربية تغطي المدن ونوايا البحث (دبي، الإمارات، المواقع الطبية، جدة، ودليل اختيار 2026)، وكل مقال يربط بصفحة الخدمة.",
+          "**الاستهداف المحلي.** إضافة دبي والإمارات إلى العناوين والعناوين الفرعية والنصوص، مع وسم hreflang يربط النسختين العربية والإنجليزية."
+        ]
+      }},
+      {fig:{src:"img/oz-service-page.jpg",w:1400,h:412,cap:{en:"The English service page: the title and H1 target Dubai and the UAE.",ar:"صفحة الخدمة بالإنجليزية: العنوان وH1 يستهدفان دبي والإمارات."}}},
+      {h:{en:"Opportunities found in Search Console",ar:"الفرص المكتشفة في Search Console"}},
+      {p:{en:"Keywords already sitting on pages 1–2 get the next round of work, because a few positions there move traffic the most.",ar:"الكلمات الموجودة أصلًا في الصفحتين الأولى والثانية هي أولوية العمل التالية، لأن التقدم بضعة مراكز فيها يحرّك الزيارات أكثر من غيرها."}},
+      {table:{
+        head:{en:["Keyword (Arabic)","Avg. position","Impressions"],ar:["الكلمة المفتاحية","متوسط الترتيب","مرات الظهور"]},
+        rows:[
+          ["شركة تصميم مواقع دبي","9.4","1,069"],
+          ["شركة تصميم مواقع في دبي","13.1","464"],
+          ["افضل شركة تصميم مواقع في الامارات","13.8","245"],
+          ["شركات تصميم مواقع","16.4","236"],
+          ["شركة تصميم مواقع","26.0","874"],
+          ["تصميم مواقع طبية","3.0","97"]
+        ],
+        note:{en:"Google Search Console, 27 Jul – 25 Oct 2026.",ar:"Google Search Console، 27 يوليو – 25 أكتوبر 2026."}
+      }},
+      {fig:{src:"img/oz-sc-webdesign.jpg",w:1284,h:430,cap:{en:"Search Console filtered to web design keywords (تصميم مواقع), 27 Jul – 25 Oct 2026: 18 clicks and 9.8K impressions, up from 2 clicks in the previous 3 months.",ar:"Search Console مفلترًا على كلمات «تصميم مواقع»، 27 يوليو – 25 أكتوبر 2026: 18 نقرة و9.8 ألف ظهور، مقابل نقرتين في الأشهر الثلاثة السابقة."}}},
+      {h:{en:"Competitor gap",ar:"الفجوة مع المنافسين"}},
+      {p:{en:"On Google UAE for شركة تصميم مواقع دبي, the leading results are upbeat.digital, canadahitech.com and uaepd.net, with OZONE's 2026 buyer's guide right after them. Two gaps stand out: competitors hold the map pack through Google Business Profiles with reviews, and some show review stars in results.",ar:"في Google الإمارات لعبارة «شركة تصميم مواقع دبي» تتصدر النتائج upbeat.digital وcanadahitech.com وuaepd.net، ويأتي دليل أوزون لاختيار شركة تصميم المواقع 2026 بعدها مباشرة. تظهر فجوتان: المنافسون يسيطرون على نتائج الخريطة عبر ملفات Google Business مع تقييمات، وبعضهم تظهر له نجوم التقييم في النتائج."}},
+      {fig:{src:"img/oz-serp.jpg",w:556,h:590,narrow:true,cap:{en:"Google UAE, 28 Oct 2026. The Search Console panel shows an 8.2 average position over the last 7 days.",ar:"Google الإمارات، 28 أكتوبر 2026. لوحة Search Console تظهر متوسط ترتيب 8.2 خلال آخر 7 أيام."}}},
+      {h:{en:"Results",ar:"النتائج"}},
+      {fig:{src:"img/oz-sc-uae.jpg",w:1284,h:392,cap:{en:"Search Console, UAE only, 27 Jul – 25 Oct 2026: 247 clicks, up from 140 in the previous 3 months.",ar:"Search Console للإمارات فقط، 27 يوليو – 25 أكتوبر 2026: 247 نقرة مقابل 140 في الأشهر الثلاثة السابقة."}}},
+      {fig:{src:"img/oz-ga4.jpg",w:1234,h:616,cap:{en:"GA4 traffic acquisition, 27 Jul – 25 Oct 2026: organic search brought 1,231 sessions and 80 of the site's 112 key events.",ar:"GA4، مصادر الزيارات، 27 يوليو – 25 أكتوبر 2026: البحث العضوي جلب 1,231 جلسة و80 من أصل 112 تحويلًا."}}},
+      {h:{en:"Next steps",ar:"الخطوات التالية"}},
+      {list:{
+        en:[
+          "Fix keyword cannibalization: at least five Arabic URLs compete for \"website design company Dubai\". Merge them into one hub page and redirect the rest.",
+          "Grow the English service page. It started earning impressions in August 2026 and still averages position 45.",
+          "Build the Google Business Profile and collect reviews to compete for the map pack."
+        ],
+        ar:[
+          "معالجة تضارب الكلمات المفتاحية: خمسة روابط عربية على الأقل تتنافس على «شركة تصميم مواقع دبي». دمجها في صفحة محورية واحدة وتحويل الباقي إليها.",
+          "تقوية صفحة الخدمة الإنجليزية، فقد بدأت تظهر في أغسطس 2026 ومتوسط ترتيبها ما زال 45.",
+          "بناء ملف Google Business وجمع التقييمات للمنافسة في نتائج الخريطة."
+        ]
+      }}
+    ]
+  }
+];
+
+const SAMPLES = [
+  {site:"wikikuwait.com",cat:{en:"Banking",ar:"البنوك"},t:"افضل بنك في الكويت 2026",g:"Best bank in Kuwait, 2026",url:"https://wikikuwait.com/%D8%A7%D9%81%D8%B6%D9%84-%D8%A8%D9%86%D9%83-%D9%81%D9%8A-%D8%A7%D9%84%D9%83%D9%88%D9%8A%D8%AA/"},
+  {site:"wikikuwait.com",cat:{en:"Banking",ar:"البنوك"},t:"أفضل بنك يعطي فوائد على الودائع في الكويت 2026",g:"Best deposit rates from Kuwaiti banks, 2026",url:"https://wikikuwait.com/%D8%A3%D9%81%D8%B6%D9%84-%D8%A8%D9%86%D9%83-%D9%8A%D8%B9%D8%B7%D9%8A-%D9%81%D9%88%D8%A7%D8%A6%D8%AF-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D9%88%D8%AF%D8%A7%D8%A6%D8%B9/"},
+  {site:"wikigulf.com",cat:{en:"Local search",ar:"البحث المحلي"},t:"اقرب مطعم من موقعي مفتوح",g:"Nearest open restaurant to my location",url:"https://wikigulf.com/%D8%A7%D9%82%D8%B1%D8%A8-%D9%85%D8%B7%D8%B9%D9%85-%D9%85%D9%86-%D9%85%D9%88%D9%82%D8%B9%D9%8A-%D9%85%D9%81%D8%AA%D9%88%D8%AD/"},
+  {site:"wikigulf.com",cat:{en:"Health",ar:"الصحة"},t:"افضل دكتور جلدية بالرياض",g:"Best dermatologist in Riyadh",url:"https://wikigulf.com/%D8%A7%D9%81%D8%B6%D9%84-%D8%AF%D9%83%D8%AA%D9%88%D8%B1-%D8%AC%D9%84%D8%AF%D9%8A%D8%A9-%D8%A8%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6/"},
+  {site:"wikigulf.com",cat:{en:"Public services",ar:"الخدمات العامة"},t:"رقم الشرطة السعودية في الدمام",g:"Saudi police number in Dammam",url:"https://wikigulf.com/%D8%B1%D9%82%D9%85-%D8%A7%D9%84%D8%B4%D8%B1%D8%B7%D8%A9-%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85/"},
+  {site:"almrj3.com",cat:{en:"Customer service",ar:"خدمة العملاء"},t:"رقم شي ان الموحد المجاني السعودية",g:"SHEIN's free unified number in Saudi Arabia",url:"https://almrj3.com/shein-unified-toll-free-number-in-saudi-arabia/"},
+  {site:"almrj3.com",cat:{en:"Stocks",ar:"الأسهم"},t:"قائمة افضل محللين اسهم في تويتر",g:"Top stock analysts to follow on X (Twitter)",url:"https://almrj3.com/best-stock-analysts-on-twitter/"},
+  {site:"almrj3.com",cat:{en:"Social media",ar:"السوشال ميديا"},t:"كم سعر الاسد في التيك توك",g:"How much the TikTok Lion gift costs",url:"https://almrj3.com/how-much-is-a-lion-in-tik-tok/"},
+  {site:"mhtwyat.com",cat:{en:"E-commerce & shipping",ar:"التجارة الإلكترونية والشحن"},t:"شركات الشحن في السعودية وأسعارها",g:"Shipping companies in Saudi Arabia and their prices",url:"https://mhtwyat.com/%d8%b4%d8%b1%d9%83%d8%a7%d8%aa-%d8%a7%d9%84%d8%b4%d8%ad%d9%86-%d9%81%d9%8a-%d8%a7%d9%84%d8%b3%d8%b9%d9%88%d8%af%d9%8a%d8%a9-%d9%88%d8%a3%d8%b3%d8%b9%d8%a7%d8%b1%d9%87%d8%a7/"},
+  {site:"mhtwyat.com",cat:{en:"E-commerce",ar:"التجارة الإلكترونية"},t:"كيف ابيع على موقع امازون من السعودية",g:"How to sell on Amazon from Saudi Arabia",url:"https://mhtwyat.com/%d9%83%d9%8a%d9%81-%d8%a7%d8%a8%d9%8a%d8%b9-%d8%b9%d9%84%d9%89-%d9%85%d9%88%d9%82%d8%b9-%d8%a7%d9%85%d8%a7%d8%b2%d9%88%d9%86-%d8%a7%d9%84%d8%b3%d8%b9%d9%88%d8%af%d9%8a%d8%a9/"},
+  {site:"mhtwyat.com",cat:{en:"Education",ar:"التعليم والجامعات"},t:"رابط التسجيل في جامعة ام القرى 1448 ونسب القبول",g:"Umm Al-Qura University registration link and admission rates",url:"https://mhtwyat.com/%d8%b1%d8%a7%d8%a8%d8%b7-%d8%a7%d9%84%d8%aa%d8%b3%d8%ac%d9%8a%d9%84-%d9%81%d9%8a-%d8%ac%d8%a7%d9%85%d8%b9%d8%a9-%d8%a7%d9%85-%d8%a7%d9%84%d9%82%d8%b1%d9%89/"},
+  {site:"mhtwyat.com",cat:{en:"Government services",ar:"الخدمات الحكومية"},t:"تجديد ملف قوى الامن 1448 الرابط والخطوات بالتفصيل",g:"Renewing a security-forces application file, step by step",url:"https://mhtwyat.com/%d8%aa%d8%ac%d8%af%d9%8a%d8%af-%d9%85%d9%84%d9%81-%d9%82%d9%88%d9%89-%d8%a7%d9%84%d8%a7%d9%85%d9%86/"}
+];
+
+const EARLIER = [
+  {name:"Ozone Digital / Tour TravelDeal",deep:"oz-case",meta:{en:"Social Media Manager and SEO Content Writer · UAE · May 2022 – Jan 2024, plus SEO for ozs.ae in 2026",ar:"Social Media Manager and SEO Content Writer · الإمارات · مايو 2022 – يناير 2024، إضافة إلى سيو ozs.ae في 2026"},
+   text:{en:"Ran brand presence on three platforms and optimized the ozs.ae service pages for on-page SEO. Instagram followers +25%, Facebook engagement +40%, and 100+ branded Canva designs.",ar:"إدارة حضور العلامة على ثلاث منصات وتحسين صفحات الخدمات في ozs.ae للسيو الداخلي. نمو متابعي إنستغرام 25% والتفاعل على فيسبوك 40%، وأكثر من 100 تصميم بهوية العلامة على Canva."},
+   links:[
+     {en:"Web development",ar:"تطوير المواقع",url:"https://ozs.ae/en/web-development/"},
+     {en:"E-commerce",ar:"المتاجر الإلكترونية",url:"https://ozs.ae/en/ecommerce/"},
+     {en:"Mobile apps",ar:"تطبيقات الجوال",url:"https://ozs.ae/en/mobile-apps/"},
+     {en:"Custom software",ar:"البرمجيات المخصصة",url:"https://ozs.ae/en/custom-software/"},
+     {en:"ERP systems",ar:"أنظمة ERP",url:"https://ozs.ae/en/erp-systems/"}
+   ]},
+  {name:"Ebla Group Real Estate",meta:{en:"SEO Content Strategist · Turkey, remote · May 2023 – Jan 2024",ar:"SEO Content Strategist · تركيا، عن بُعد · مايو 2023 – يناير 2024"},
+   text:{en:"Technical audit of 1,000+ pages with 150+ crawl issues fixed, plus schema markup and URL clean-up. Search visibility +25% in three months, organic CTR +20%.",ar:"تدقيق تقني لأكثر من 1,000 صفحة وإصلاح أكثر من 150 مشكلة زحف، مع Schema وتنظيم الروابط. ارتفاع الظهور في البحث 25% خلال ثلاثة أشهر ونسبة النقر العضوية 20%."},
+   links:[{en:"eblagroup.net",ar:"eblagroup.net",url:"https://www.eblagroup.net/"}]},
+  {name:"blog.weisro",meta:{en:"WordPress SEO Specialist · Germany, remote · Jan 2024 – Jun 2025",ar:"WordPress SEO Specialist · ألمانيا، عن بُعد · يناير 2024 – يونيو 2025"},
+   text:{en:"Built a WordPress blog from scratch to 1,200+ monthly visitors in 90 days. Rank Math setup, 20+ SEO articles, organic CTR +35%.",ar:"بناء مدونة ووردبريس من الصفر حتى 1,200+ زائر شهريًا خلال 90 يومًا. إعداد Rank Math، وأكثر من 20 مقالًا، وارتفاع نسبة النقر العضوية 35%."}},
+  {name:"Arabian Code",meta:{en:"SEO Specialist and Web Content Writer (freelance) · Syria · 2012 – 2018",ar:"SEO Specialist and Web Content Writer (عمل حر) · سوريا · 2012 – 2018"},
+   text:{en:"Built all of the agency's service pages, wrote every article on the site and set up site-wide SEO. Result: 150+ target keywords on Google page one, 10+ inbound client enquiries a day and organic leads +40%.",ar:"بناء كل صفحات الخدمات في موقع الوكالة، وكتابة كل مقالاته، وضبط السيو للموقع كاملًا. النتيجة: أكثر من 150 كلمة مفتاحية في الصفحة الأولى من Google، وأكثر من 10 استفسارات عملاء يوميًا، ونمو العملاء المحتملين من البحث 40%."},
+   links:[{en:"arabian-code.com",ar:"arabian-code.com",url:"https://arabian-code.com/"}]}
+];
+
+const PAA = [
+  {q:{en:"Which roles are you open to?",ar:"ما الوظائف المناسبة؟"},
+   a:{en:"Digital Marketing Manager or Specialist, SEO Specialist or Lead, E-commerce and Performance Marketing, and Arabic Content Lead roles in the UAE.",ar:"مدير أو أخصائي تسويق رقمي، أخصائي أو قائد سيو، تسويق المتاجر الإلكترونية والأداء، وقيادة المحتوى العربي في الإمارات."}},
+  {q:{en:"Do you write in both Arabic and English?",ar:"هل الكتابة بالعربية والإنجليزية معًا؟"},
+   a:{en:"Yes. Arabic is my native language and I write professional English. I have written website copy, product descriptions and SEO articles in both.",ar:"نعم. العربية لغتي الأم وأكتب الإنجليزية بمستوى مهني. كتبت محتوى مواقع وأوصاف منتجات ومقالات سيو باللغتين."}},
+  {q:{en:"Which tools do you use every day?",ar:"ما الأدوات المستخدمة يوميًا؟"},
+   a:{en:"GA4, Google Tag Manager, Meta Pixel, Meta Ads Manager, Google Search Console, Semrush, Ahrefs, Rank Math, WordPress, WooCommerce, Shopify and Canva.",ar:"GA4 وGoogle Tag Manager وMeta Pixel وMeta Ads Manager وGoogle Search Console وSemrush وAhrefs وRank Math وووردبريس وووكومرس وشوبيفاي وCanva."}},
+  {q:{en:"Where are you based?",ar:"أين المقر؟"},
+   a:{en:"Dubai, UAE.",ar:"دبي، الإمارات."}}
+];
+
+const TIMELINE = [
+  {when:{en:"Oct 2024 – present",ar:"أكتوبر 2024 – حتى الآن"},role:"Digital Marketing and SEO Specialist (full-time)",org:{en:"Um Hamza Foodstuff · UAE",ar:"أم حمزة للمواد الغذائية · الإمارات"}},
+  {when:{en:"Mar 2026 – Sep 2026",ar:"مارس 2026 – سبتمبر 2026"},role:"Brand and Digital Marketing Manager (freelance project)",org:{en:"Freshety, I A T Trading L.L.C · Dubai",ar:"فريشتي، I A T Trading L.L.C · دبي"}},
+  {when:{en:"Apr 2026 – present",ar:"أبريل 2026 – حتى الآن"},role:"SEO Specialist (freelance)",org:{en:"OZONE Digital Solutions (ozs.ae) · Dubai",ar:"أوزون للحلول الرقمية (ozs.ae) · دبي"}},
+  {when:{en:"Jan 2024 – Jun 2025",ar:"يناير 2024 – يونيو 2025"},role:"WordPress SEO Specialist (freelance)",org:{en:"blog.weisro · Germany, remote",ar:"blog.weisro · ألمانيا، عن بُعد"}},
+  {when:{en:"May 2023 – Jan 2024",ar:"مايو 2023 – يناير 2024"},role:"SEO Content Strategist (freelance)",org:{en:"Ebla Group Real Estate · Turkey, remote",ar:"Ebla Group Real Estate · تركيا، عن بُعد"}},
+  {when:{en:"May 2022 – Jan 2024",ar:"مايو 2022 – يناير 2024"},role:"Social Media Manager and SEO Content Writer",org:{en:"Ozone Digital / Tour TravelDeal · UAE, remote",ar:"Ozone Digital / Tour TravelDeal · الإمارات، عن بُعد"}},
+  {when:{en:"Dec 2019 – present",ar:"ديسمبر 2019 – حتى الآن"},role:"Arabic SEO Content Writer (freelance)",org:{en:"Mhtwyat, WikiKuwait, WikiGulf, Almerja · remote",ar:"محتويات، ويكي الكويت، ويكي الخليج، المرجع · عن بُعد"}},
+  {when:{en:"Nov 2012 – 2018",ar:"نوفمبر 2012 – 2018"},role:"SEO Specialist and Web Content Writer (freelance)",org:{en:"Arabian Code · Syria",ar:"Arabian Code · سوريا"}}
+];
+
+const SKILLS = [
+  {h:{en:"SEO",ar:"السيو"},items:["Technical SEO","On-page SEO","E-commerce SEO","Arabic SEO","Schema markup","Keyword research","Content audits","Core Web Vitals"]},
+  {h:{en:"Paid social and analytics",ar:"الإعلانات والتحليلات"},items:["Meta Ads","Catalog ads","Retargeting","GA4","Google Tag Manager","Meta Pixel","Google Search Console","Conversion tracking"]},
+  {h:{en:"Content",ar:"المحتوى"},items:[{en:"Arabic copywriting",ar:"كتابة إعلانية بالعربية"},{en:"English copywriting",ar:"كتابة إعلانية بالإنجليزية"},{en:"SEO articles",ar:"مقالات سيو"},{en:"Product descriptions",ar:"أوصاف المنتجات"},{en:"Landing-page copy",ar:"نصوص صفحات الهبوط"},{en:"Content strategy",ar:"استراتيجية المحتوى"},{en:"Editorial QA",ar:"التدقيق التحريري"}]},
+  {h:{en:"Platforms and tools",ar:"المنصات والأدوات"},items:["WordPress","WooCommerce","Shopify","Rank Math","Semrush","Ahrefs","Meta Business Suite","Canva"]}
+];
+
+const CERTS = [
+  {en:"SEO Specialization: On-Page SEO for WordPress (2023)",ar:"SEO Specialization: On-Page SEO for WordPress (2023)"},
+  {en:"Social Media Management: Facebook and Instagram (2023)",ar:"Social Media Management: Facebook and Instagram (2023)"},
+  {en:"Creative Content Writing (2022)",ar:"Creative Content Writing (2022)"},
+  {en:"Canva Design (2022)",ar:"Canva Design (2022)"},
+  {en:"Content Writer Award, Saudi Trend (2023)",ar:"جائزة كاتب محتوى، Saudi Trend (2023)"}
+];
+
+const PANEL = {
+  name:{en:"Majd Salami",ar:"مجد سلامي"},
+  initials:{en:"MS",ar:"م س"},
+  role:{en:"SEO, Content and Digital Marketing · Dubai",ar:"سيو، كتابة محتوى وتسويق رقمي · دبي"},
+  desc:{
+    en:"10+ years in SEO and digital marketing. I grow UAE e-commerce brands with bilingual content, technical SEO, Meta Ads and clean conversion tracking.",
+    ar:"أكثر من 10 سنوات في السيو والتسويق الرقمي. أنمّي المتاجر الإلكترونية في الإمارات بمحتوى عربي وإنجليزي، وسيو تقني، وإعلانات Meta، وتتبّع دقيق للتحويلات."
+  },
+  facts:[
+    {k:{en:"Based in",ar:"المقر"},v:{en:"Dubai, UAE",ar:"دبي، الإمارات"}},
+    {k:{en:"Languages",ar:"اللغات"},v:{en:"Arabic (native), English (fluent)",ar:"العربية (اللغة الأم)، الإنجليزية (بطلاقة)"}},
+    {k:{en:"Focus",ar:"التركيز"},v:{en:"E-commerce, food retail, Arabic content",ar:"المتاجر الإلكترونية، قطاع الأغذية، المحتوى العربي"}},
+    {k:{en:"Education",ar:"التعليم"},v:{en:"BSc Electrical Engineering, University of Aleppo",ar:"بكالوريوس هندسة كهربائية، جامعة حلب"}}
+  ],
+  contactH:{en:"Contact",ar:"التواصل"},
+  emailL:{en:"Email",ar:"البريد"},
+  phoneL:{en:"Phone / WhatsApp",ar:"الهاتف / واتساب"}
+};
+
+let lang = "en";
+const t = v => (v && typeof v === "object" && !Array.isArray(v)) ? (v[lang] ?? v.en) : v;
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const rich = s => esc(s).replace(/\*\*(.+?)\*\*/g, "<mark>$1</mark>").replace(/`(.+?)`/g, "<code>$1</code>");
+const ext = 'target="_blank" rel="noopener"';
+
+function renderStatic(){
+  document.querySelectorAll("[data-t]").forEach(el => {
+    const v = UI[el.dataset.t];
+    el.innerHTML = rich(t(v));
+  });
+  document.getElementById("tabs").innerHTML = UI.tabs.map((x,i) =>
+    `<a href="#${x.id}"${i===0?' class="on"':''}>${esc(t(x))}</a>`).join("");
+  document.getElementById("kpis").innerHTML = KPIS.map(k =>
+    `<div class="kpi"><strong>${esc(k.n)}</strong><span>${esc(t(k))}</span></div>`).join("");
+}
+
+function renderCases(){
+  document.getElementById("cases").innerHTML = CASES.map(c => `
+    <article class="result">
+      <div class="crumb">
+        <span class="fav" aria-hidden="true">${esc(c.fav)}</span>
+        <span class="site"><b>${esc(c.site)}</b><span>${esc(c.crumb)}</span></span>
+      </div>
+      <h3><a href="${c.href}" ${ext}>${esc(t(c.title))}</a></h3>
+      <p class="meta">${esc(t(c.meta))}</p>
+      <p class="snippet">${rich(t(c.snippet))}</p>
+      <ul class="did">${t(c.did).map(d => `<li>${rich(d)}</li>`).join("")}</ul>
+      ${c.results.length ? `<div class="kpis" style="margin-top:0;margin-bottom:14px">${c.results.map(r => `<div class="kpi"><strong>${esc(r.n)}</strong><span>${esc(t(r))}</span></div>`).join("")}</div>` : ""}
+      <div class="sitelinks">${c.links.map(l => `<a href="${l.url}" ${ext}><b>${esc(t(l))}</b><span>${esc(l.url.replace(/^https?:\/\/(www\.)?/,"").replace(/\/$/,""))}</span></a>`).join("")}</div>
+      <div class="tags">${c.tags.map(x => `<span>${esc(x)}</span>`).join("")}</div>
+      ${c.deep ? `<a class="deep-link" href="#${c.deep}">${esc(t(UI.readCase))}</a>` : ""}
+    </article>`).join("");
+}
+
+function renderSamples(){
+  document.getElementById("samples").innerHTML = SAMPLES.map(s => `
+    <div class="sample">
+      <span class="cat"><span class="ltr">${esc(s.site)}</span> › ${esc(t(s.cat))}</span>
+      <a href="${s.url}" ${ext} lang="ar" dir="rtl">${esc(s.t)}</a>
+      ${lang === "en" ? `<p class="gloss">${esc(s.g)}</p>` : ""}
+    </div>`).join("");
+}
+
+function renderBlock(b){
+  if (b.h) return `<h4>${esc(t(b.h))}</h4>`;
+  if (b.p) return `<p>${rich(t(b.p))}</p>`;
+  if (b.list) return `<ul>${t(b.list).map(x => `<li>${rich(x)}</li>`).join("")}</ul>`;
+  if (b.steps) return `<ol>${t(b.steps).map(x => `<li>${esc(x).replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")}</li>`).join("")}</ol>`;
+  if (b.table) {
+    const cell = (v, i) => `<td class="${i === 0 ? "" : /^[\d.,x+→ ]+$|^AED/.test(String(t(v))) ? "n" : "c"}">${esc(t(v))}</td>`;
+    return `<div class="tbl"><table><thead><tr>${t(b.table.head).map(x => `<th>${esc(x)}</th>`).join("")}</tr></thead>
+      <tbody>${b.table.rows.map(r => `<tr>${r.map(cell).join("")}</tr>`).join("")}</tbody></table></div>
+      ${b.table.note ? `<p class="note">${esc(t(b.table.note))}</p>` : ""}`;
+  }
+  if (b.bars) {
+    const max = Math.max(...b.bars.rows.map(r => r[1]));
+    return `<div class="bars"><p class="cap">${esc(t(b.bars.cap))}</p>${b.bars.rows.map(r => `
+      <div class="bar"><span>${esc(t(r[0]))}</span><span class="track"><span class="fill" style="display:block;width:${(r[1] / max * 100).toFixed(1)}%"></span></span><span class="v">${r[1].toFixed(1)}%</span></div>`).join("")}</div>`;
+  }
+  if (b.fig) {
+    const f = b.fig;
+    return `<figure class="shot${f.narrow ? " narrow" : ""}"><img src="${f.src}" width="${f.w}" height="${f.h}" alt="${esc(t(f.cap))}" loading="lazy"><figcaption>${esc(t(f.cap))}</figcaption></figure>`;
+  }
+  return "";
+}
+
+function renderDeep(){
+  document.getElementById("deepCases").innerHTML = DEEP.map(c => `
+    <article class="deep-case" id="${c.id}">
+      <p class="label">${esc(t(c.eyebrow))}</p>
+      <h3>${esc(t(c.title))}</h3>
+      <p class="meta">${esc(t(c.meta))}</p>
+      <div class="kpis">${c.kpis.map(k => `<div class="kpi"><strong>${esc(k.n)}</strong><span>${esc(t(k))}</span></div>`).join("")}</div>
+      ${c.blocks.map(renderBlock).join("")}
+    </article>`).join("");
+}
+
+function renderRest(){
+  document.getElementById("earlierList").innerHTML = EARLIER.map(e => `
+    <div class="mini"><h4>${esc(e.name)}</h4><p class="meta">${esc(t(e.meta))}</p><p>${esc(t(e.text))}</p>${e.links ? `<p class="minilinks">${e.links.map(l => `<a href="${l.url}" ${ext}>${esc(t(l))}</a>`).join("")}</p>` : ""}${e.deep ? `<a class="deep-link" href="#${e.deep}">${esc(t(UI.readCase))}</a>` : ""}</div>`).join("");
+  document.getElementById("paa").innerHTML = PAA.map(p => `
+    <div class="qa"><h4>${esc(t(p.q))}</h4><p>${esc(t(p.a))}</p></div>`).join("");
+  document.getElementById("timeline").innerHTML = TIMELINE.map(x => `
+    <li><span class="when">${esc(t(x.when))}</span><span class="what"><b class="ltr">${esc(x.role)}</b><span>${esc(t(x.org))}</span></span></li>`).join("");
+  document.getElementById("skillGroups").innerHTML = SKILLS.map(g => `
+    <div><h4>${esc(t(g.h))}</h4><div class="chips">${g.items.map(i => `<span>${esc(t(i))}</span>`).join("")}</div></div>`).join("");
+  document.getElementById("certs").innerHTML = CERTS.map(c => `<li>${esc(t(c))}</li>`).join("");
+  document.getElementById("contactBand").innerHTML = `
+    <div class="cbox"><small>${esc(t(PANEL.emailL))}</small><span class="v">${CONTACT.email}</span></div>
+    <div class="cbox"><small>${esc(t(PANEL.phoneL))}</small><a class="v" href="${CONTACT.whatsapp}" ${ext}>${CONTACT.phone}</a></div>
+    <div class="cbox"><small>LinkedIn</small><a class="v" href="${CONTACT.linkedin}" ${ext}>${lang === "ar" ? "مجد سلامي على لينكدإن" : "Majd Salami on LinkedIn"}</a></div>`;
+}
+
+function renderPanel(){
+  document.getElementById("kp").innerHTML = `
+    <div class="kp-head">
+      <div class="avatar"><img src="${PHOTO}" alt="${esc(t(PANEL.name))}" width="76" height="76"></div>
+      <div><h1>${esc(t(PANEL.name))}</h1><p class="role">${esc(t(PANEL.role))}</p></div>
+    </div>
+    <div class="kp-body">
+      <p class="kp-desc">${esc(t(PANEL.desc))}</p>
+      <dl class="facts">${PANEL.facts.map(f => `<div><dt>${esc(t(f.k))}:</dt><dd>${esc(t(f.v))}</dd></div>`).join("")}</dl>
+      <h5>${esc(t(PANEL.contactH))}</h5>
+      <div class="contact">
+        <div class="crow"><span class="v" id="c-email">${CONTACT.email}</span><button type="button" class="copy" id="copy-email" data-copy="${CONTACT.email}">${esc(t(UI.copy))}</button></div>
+        <div class="crow"><span class="v" id="c-phone">${CONTACT.phone}</span><button type="button" class="copy" id="copy-phone" data-copy="${CONTACT.phone}">${esc(t(UI.copy))}</button></div>
+      </div>
+      <div class="links">
+        <a class="primary" href="${CONTACT.whatsapp}" ${ext}>WhatsApp</a>
+        <a href="${CONTACT.linkedin}" ${ext}>LinkedIn</a>
+        <a href="https://almrj3.com/author/majd-salami/" ${ext}>${lang === "ar" ? "مقالاتي" : "Articles"}</a>
+      </div>
+    </div>`;
+}
+
+function render(){
+  const app = document.getElementById("app");
+  app.dir = lang === "ar" ? "rtl" : "ltr";
+  app.lang = lang;
+  document.documentElement.lang = lang;
+  document.title = lang === "ar" ? "مجد سلامي | بورتفوليو" : "Majd Salami Portfolio";
+  document.getElementById("btn-en").setAttribute("aria-pressed", lang === "en");
+  document.getElementById("btn-ar").setAttribute("aria-pressed", lang === "ar");
+  renderStatic(); renderCases(); renderDeep(); renderSamples(); renderRest(); renderPanel();
+}
+
+function setLang(l){
+  lang = l === "ar" ? "ar" : "en";
+  try { localStorage.setItem("ms-lang", lang); } catch(e) {}
+  render();
+}
+
+document.querySelectorAll(".lang button").forEach(b => b.addEventListener("click", () => setLang(b.dataset.lang)));
+
+document.addEventListener("click", e => {
+  const b = e.target.closest(".copy");
+  if (!b) return;
+  const text = b.dataset.copy;
+  const done = () => { b.textContent = t(UI.copied); setTimeout(() => { b.textContent = t(UI.copy); }, 1600); };
+  const fallback = () => {
+    const el = b.previousElementSibling;
+    const r = document.createRange(); r.selectNodeContents(el);
+    const s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+  };
+  try {
+    navigator.clipboard.writeText(text).then(done, fallback);
+  } catch(err) { fallback(); }
+});
+
+document.addEventListener("click", e => {
+  const a = e.target.closest(".tabs a");
+  if (!a) return;
+  document.querySelectorAll(".tabs a").forEach(x => x.classList.toggle("on", x === a));
+});
+
+(function init(){
+  const h = (location.hash || "").replace("#","");
+  let saved = null;
+  try { saved = localStorage.getItem("ms-lang"); } catch(e) {}
+  lang = h === "ar" ? "ar" : h === "en" ? "en" : (saved || "en");
+  render();
+})();
+</script>
+
+</body>
+</html>
