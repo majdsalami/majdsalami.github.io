@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Majd Salami | SEO, Content &amp; Digital Marketing in Dubai</title>
-<meta name="description" content="Majd Salami: SEO, Arabic and English content, Meta Ads and conversion tracking for UAE e-commerce brands. Case studies with Search Console, GA4 and Ads Manager evidence.">
+<meta name="description" content="Majd Salami: reels and social media, SEO, Arabic and English content, Meta Ads and conversion tracking for UAE brands. Case studies with platform insights, Search Console, GA4 and Ads Manager evidence.">
 <link rel="canonical" href="https://majdsalami.github.io/">
 <link rel="icon" type="image/png" href="favicon.png">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://majdsalami.github.io/">
 <meta property="og:title" content="Majd Salami | SEO, Content &amp; Digital Marketing">
-<meta property="og:description" content="Majd Salami: SEO, Arabic and English content, Meta Ads and conversion tracking for UAE e-commerce brands. Case studies with Search Console, GA4 and Ads Manager evidence.">
+<meta property="og:description" content="Majd Salami: reels and social media, SEO, Arabic and English content, Meta Ads and conversion tracking for UAE brands. Case studies with platform insights, Search Console, GA4 and Ads Manager evidence.">
 <meta property="og:image" content="https://majdsalami.github.io/og-cover.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="627">
@@ -224,6 +224,37 @@ mark{background:var(--mark);color:var(--mark-ink);padding:0 2px;border-radius:2p
 .cbox a{text-decoration:none}
 @media (max-width:640px){.contact-band{grid-template-columns:minmax(0,1fr)}}
 footer{padding-block:20px 40px;color:var(--muted);font-size:13px;border-top:1px solid var(--line)}
+
+/* reels and social media */
+.sec h3.subh{font:600 17px/1.4 var(--f-display);margin:26px 0 10px}
+.fit{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:14px}
+.fit div{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px 16px;min-width:0}
+.fit b{display:block;font:500 12px var(--f-mono);letter-spacing:.04em;text-transform:uppercase;color:var(--accent);margin-bottom:4px}
+.fit p{margin:0;font-size:14.5px}
+@media (max-width:640px){.fit{grid-template-columns:minmax(0,1fr)}}
+.shorts{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(170px,186px);gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding:2px 2px 10px;scrollbar-width:thin}
+.short{scroll-snap-align:start;background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden;display:flex;flex-direction:column;min-width:0}
+.short .frame{position:relative;aspect-ratio:9/16;background:#0E1514;overflow:hidden}
+.short .frame img{display:block;width:100%;height:100%;object-fit:cover}
+.short .frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.short .frame button{all:unset;cursor:pointer;position:absolute;inset:0;display:grid;place-items:center}
+.short .frame button span{width:52px;height:52px;border-radius:50%;background:rgba(0,0,0,.62);display:grid;place-items:center;transition:transform .15s}
+.short .frame button:hover span{transform:scale(1.08)}
+.short .frame button:focus-visible{outline:2px solid var(--accent);outline-offset:-4px}
+.short .poster{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:14px;color:#fff;background:linear-gradient(160deg,#0B6F57 0%,#0E3B31 55%,#0E1514 100%);text-decoration:none}
+.short .poster q{font:600 19px/1.45 "IBM Plex Sans Arabic",var(--f-display);quotes:none;direction:rtl;text-align:right;text-wrap:balance}
+.short .poster small{margin-top:10px;font:12px var(--f-mono);opacity:.8}
+.short .poster .ig{position:absolute;top:12px;inset-inline-start:12px;font:500 11px var(--f-mono);letter-spacing:.05em;padding:3px 8px;border-radius:999px;background:rgba(255,255,255,.14);white-space:nowrap}
+.short .body{padding:10px 12px 12px;display:flex;flex-direction:column;gap:3px;flex:1}
+.short .plat{font:11.5px var(--f-mono);color:var(--muted)}
+.short h4{margin:0;font:500 14px/1.4 var(--f-display)}
+.short .views{margin-top:auto;padding-top:6px;font-size:12.5px;color:var(--muted);line-height:1.4}
+.short .views strong{display:block;font:600 19px/1.2 var(--f-display);color:var(--ink);direction:ltr;unicode-bidi:isolate;text-align:start}
+.short .views a{font-weight:500;text-decoration:none}
+.howto{margin:6px 0 0;padding:0;list-style:none;counter-reset:s;display:grid;gap:8px;max-width:70ch}
+.howto li{counter-increment:s;display:grid;grid-template-columns:28px minmax(0,1fr);gap:10px;align-items:start}
+.howto li::before{content:counter(s);width:26px;height:26px;border-radius:50%;background:var(--accent-soft);color:var(--accent);display:grid;place-items:center;font:600 13px var(--f-display)}
+.howto strong{font-weight:600}
 @media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
 </style>
 
@@ -253,6 +284,21 @@ footer{padding-block:20px 40px;color:var(--muted);font-size:13px;border-top:1px 
           <p class="label" id="f-label" data-t="inShort"></p>
           <p class="answer" data-t="answer"></p>
           <div class="kpis" id="kpis"></div>
+        </section>
+
+        <section class="sec" id="reels">
+          <h2 data-t="reelsH"></h2>
+          <p class="sub" data-t="reelsSub"></p>
+          <h3 class="subh" data-t="shortsH"></h3>
+          <div class="shorts" id="shorts"></div>
+          <h3 class="subh" data-t="fitH"></h3>
+          <div class="fit" id="fit"></div>
+          <h3 class="subh" data-t="channelsH"></h3>
+          <div id="channels"></div>
+          <h3 class="subh" data-t="howH"></h3>
+          <ol class="howto" id="howto"></ol>
+          <h3 class="subh" data-t="toolsH"></h3>
+          <div class="chips" id="vtools"></div>
         </section>
 
         <section class="sec" id="work">
@@ -328,11 +374,12 @@ const UI = {
   count:{en:"About 2,000+ published articles · 2,850+ ad-driven purchases · SEO since 2012",ar:"نحو 2,000+ مقال منشور · 2,850+ عملية شراء من الإعلانات · سيو منذ 2012"},
   inShort:{en:"In short",ar:"باختصار"},
   answer:{
-    en:"I plan and run digital growth for UAE brands: technical and e-commerce **SEO**, **bilingual Arabic and English content**, **Meta Ads**, and GA4, GTM and Meta Pixel **tracking** that ties ad spend to orders. Most recently I built Freshety's full marketing setup from zero, and I run SEO, ads and social media for the Um Hamza online store.",
-    ar:"أخطط وأنفّذ النمو الرقمي لعلامات تجارية في الإمارات: **سيو** تقني وسيو للمتاجر، **محتوى بالعربية والإنجليزية**، **إعلانات Meta**، و**تتبّع** عبر GA4 وGTM وMeta Pixel يربط الإنفاق الإعلاني بالطلبات. آخر أعمالي بناء البنية التسويقية الكاملة لمتجر «فريشتي» من الصفر، وإدارة السيو والإعلانات والسوشال ميديا لمتجر «أم حمزة»."
+    en:"I plan and run digital growth for UAE brands: technical and e-commerce **SEO**, **bilingual Arabic and English content**, **Meta Ads**, and GA4, GTM and Meta Pixel **tracking** that ties ad spend to orders. Most recently I built Freshety's full marketing setup from zero, I run SEO, ads, **reels** and social media for Um Hamza, and I launched the Arabic documentary channel Alat Mansiya on YouTube.",
+    ar:"أخطط وأنفّذ النمو الرقمي لعلامات تجارية في الإمارات: **سيو** تقني وسيو للمتاجر، **محتوى بالعربية والإنجليزية**، **إعلانات Meta**، و**تتبّع** عبر GA4 وGTM وMeta Pixel يربط الإنفاق الإعلاني بالطلبات. آخر أعمالي بناء البنية التسويقية الكاملة لمتجر «فريشتي» من الصفر، وإدارة السيو والإعلانات و**الريلز** والسوشال ميديا لـ«أم حمزة»، وإطلاق قناة «آلات منسية» الوثائقية العربية على يوتيوب."
   },
   tabs:[
     {id:"top",en:"All",ar:"الكل"},
+    {id:"reels",en:"Reels & social",ar:"الريلز والسوشال"},
     {id:"work",en:"Case studies",ar:"دراسات حالة"},
     {id:"deep",en:"Deep dives",ar:"دراسات مفصّلة"},
     {id:"writing",en:"Writing",ar:"الكتابة"},
@@ -340,6 +387,15 @@ const UI = {
     {id:"skills",en:"Skills",ar:"المهارات"},
     {id:"contact",en:"Contact",ar:"تواصل"}
   ],
+  reelsH:{en:"Reels and social media",ar:"الريلز وإدارة السوشال ميديا"},
+  reelsSub:{en:"Short-form video and channel management on Instagram, TikTok, Facebook, Snapchat and YouTube. Every number comes from the platform's own insights.",ar:"فيديو قصير وإدارة حسابات على إنستغرام وتيك توك وفيسبوك وسناب شات ويوتيوب. كل رقم هنا من لوحة إحصاءات المنصة نفسها."},
+  shortsH:{en:"Short videos",ar:"فيديوهات قصيرة"},
+  fitH:{en:"What I deliver in social media",ar:"ما أقدّمه في السوشال ميديا"},
+  channelsH:{en:"Channels I run",ar:"الحسابات التي أديرها"},
+  howH:{en:"How a reel gets made",ar:"كيف يُصنع الريل"},
+  toolsH:{en:"Video and social tools",ar:"أدوات الفيديو والسوشال"},
+  play:{en:"Play",ar:"تشغيل"},
+  watchOn:{en:"Watch on",ar:"شاهد على"},
   workH:{en:"Case studies",ar:"دراسات حالة"},
   workSub:{en:"Recent work, with live links you can check.",ar:"أعمال حديثة مع روابط مباشرة يمكن التحقق منها."},
   deepH:{en:"Deep dives",ar:"دراسات حالة مفصّلة"},
@@ -357,7 +413,7 @@ const UI = {
   contactSub:{en:"Based in Dubai. Email or WhatsApp is the fastest way to reach me.",ar:"مقيم في دبي. البريد الإلكتروني أو واتساب أسرع طريقة للتواصل."},
   copy:{en:"Copy",ar:"نسخ"},
   copied:{en:"Copied",ar:"تم النسخ"},
-  footer:{en:"Majd Salami · Dubai, UAE · Updated October 2026",ar:"مجد سلامي · دبي، الإمارات · آخر تحديث أكتوبر 2026"},
+  footer:{en:"Majd Salami · Dubai, UAE · Updated November 2026",ar:"مجد سلامي · دبي، الإمارات · آخر تحديث نوفمبر 2026"},
   results:{en:"Results",ar:"النتائج"}
 };
 
@@ -472,6 +528,111 @@ const CASES = [
     tags:["Arabic SEO","Search intent","Keyword research","Gulf audience","Editorial QA"]
   }
 ];
+
+/* Reels and social media. To add a video: one line in SHORTS.
+   yt = YouTube video ID (plays in the card); url = link out (Instagram, TikTok, Facebook). A card with neither shows its stats only. */
+const SHORTS = [
+  {plat:"Instagram + Facebook · Um Hamza", poster:"يا أم فلان.. كسرنا ولا كسر قلبك على ضناك", url:"https://www.instagram.com/reel/DXe7-pBgCsD/",
+   title:{en:"A shop accident, answered with kindness",ar:"«كسرنا ولا كسر قلبك»: الرد على حادثة فرع الشعب"},
+   n:"479K", stat:{en:"views (236K Instagram + 243K Facebook) · 1,255 shares · 129 follows",ar:"مشاهدة (236 ألف إنستغرام + 243 ألف فيسبوك) · 1,255 مشاركة · 129 متابعًا"}},
+  {plat:"Instagram · Um Hamza", poster:"رُبّ ضارةٍ نافعة…", url:"https://www.instagram.com/reel/DXtBUpYAed5/",
+   title:{en:"The follow-up: what happened after the accident",ar:"الجزء الثاني: «رُبّ ضارةٍ نافعة»"},
+   n:"17.2K", stat:{en:"views · 43 shares · 27 saves",ar:"مشاهدة · 43 مشاركة · 27 حفظًا"}},
+  {plat:"Instagram · Um Hamza", poster:"كل عام وراية الإمارات عالية", url:"https://www.instagram.com/reel/DfO4STUgOXm/",
+   title:{en:"UAE Flag Day reel",ar:"ريل يوم العلم"},
+   n:"24.3K", stat:{en:"views · 482 shares · 139 saves · 18 s average watch",ar:"مشاهدة · 482 مشاركة · 139 حفظًا · 18 ثانية متوسط المشاهدة"}},
+  {plat:"Instagram · Um Hamza", poster:"القرية العالمية · جناح القرية القطرية · محل 20", url:"https://www.instagram.com/reel/DQBOIhqDbl2/",
+   title:{en:"Global Village shop launch",ar:"افتتاح محل القرية العالمية"},
+   n:"102.8K", stat:{en:"views · 355 new followers (with a paid boost)",ar:"مشاهدة · 355 متابعًا جديدًا (بترويج مدفوع)"}},
+  {plat:"YouTube Shorts · Alat Mansiya", yt:"lEhS068iqPY",
+   title:{en:"A plane that lands before it takes off",ar:"ليس سحرًا: طائرة تصل قبل أن تُقلع!"},
+   n:"1.5K", stat:{en:"views in the first days",ar:"مشاهدة في الأيام الأولى"}},
+  {plat:"YouTube Shorts · Alat Mansiya", yt:"K065Wjyuvrc",
+   title:{en:"Guess where the first supersonic flight went",ar:"ليست نيويورك… خمّن وجهة أول رحلة أسرع من الصوت"},
+   n:"1.4K", stat:{en:"views in the first days",ar:"مشاهدة في الأيام الأولى"}},
+  {plat:"YouTube Shorts · Alat Mansiya", yt:"QLU_9iheWio",
+   title:{en:"A plane that grows 25 cm in flight",ar:"صدّق أو لا تصدّق: طائرة تتمدد 25 سم في الجو"},
+   n:"1.2K", stat:{en:"views in the first days",ar:"مشاهدة في الأيام الأولى"}},
+  {plat:"YouTube Shorts · Alat Mansiya", yt:"_bJRkLzId7I",
+   title:{en:"The first plane with a broken nose",ar:"أول طائرة في العالم بأنف مكسور!"},
+   n:"1.1K", stat:{en:"views in the first days",ar:"مشاهدة في الأيام الأولى"}}
+];
+
+const FIT = [
+  {k:{en:"Shoot, edit and create",ar:"التصوير والمونتاج وصناعة المحتوى"},
+   v:{en:"I take each reel from brief to post: hook, script, a scene sheet with every shot and on-screen line, filming direction for the branch team, then the edit, captions and cover. The formats work for any product or space: close-up textures, before and after, pull-back reveals and walkthroughs.",
+      ar:"أتولّى الريل من الفكرة حتى النشر: الافتتاحية، والنص، وجدول مشاهد فيه كل لقطة وكل سطر على الشاشة، وتوجيه فريق الفرع أثناء التصوير، ثم المونتاج والترجمة على الشاشة والغلاف. وهي صيغ تصلح لأي منتج أو مكان: لقطات الملمس القريبة، وقبل وبعد، والكشف بالرجوع، والجولات داخل المكان."}},
+  {k:{en:"Own the channels",ar:"إدارة الحسابات"},
+   v:{en:"Daily content for Um Hamza on Instagram (55.7K followers), Facebook, TikTok and Snapchat, plus the Alat Mansiya channels. Each platform gets its own cut, hook and length; nothing is reposted as-is.",
+      ar:"محتوى يومي لأم حمزة على إنستغرام (55.7 ألف متابع) وفيسبوك وتيك توك وسناب شات، إضافة إلى حسابات «آلات منسية». لكل منصة نسختها وافتتاحيتها وطولها، ولا يُنقل شيء كما هو."}},
+  {k:{en:"Build and engage the community",ar:"بناء المجتمع والتفاعل"},
+   v:{en:"Replies to comments and DMs (27 new conversations in 28 days), collab reels with Abu Dhabi creators (one reached 76K views), and launch content that turns followers into visitors: the Global Village shop reel reached 102.8K views and 355 new followers.",
+      ar:"الرد على التعليقات والرسائل (27 محادثة جديدة خلال 28 يومًا)، وريلز تعاون مع صنّاع محتوى في أبوظبي (أحدها وصل إلى 76 ألف مشاهدة)، ومحتوى افتتاحات يحوّل المتابع إلى زائر: ريل محل القرية العالمية وصل إلى 102.8 ألف مشاهدة و355 متابعًا جديدًا."}},
+  {k:{en:"Grow and optimize",ar:"النمو والتحسين"},
+   v:{en:"I read every post at 1 h, 6 h and 24 h and log reach, shares, saves, follows and watch time. Over 28 days Instagram views rose 21.6% to 408.3K, 75.8% of them from non-followers, and the Flag Day reel brought 80% of that month's post follows.",
+      ar:"أقرأ كل منشور بعد ساعة و6 ساعات و24 ساعة، وأسجّل الوصول والمشاركات والحفظ والمتابعات ومدة المشاهدة. خلال 28 يومًا ارتفعت مشاهدات إنستغرام 21.6% إلى 408.3 ألف، 75.8% منها من غير المتابعين، وجلب ريل يوم العلم 80% من متابعات المنشورات في ذلك الشهر."}},
+  {k:{en:"Trend spotting",ar:"رصد الترندات"},
+   v:{en:"Every idea starts from a proven format: a video that reached 20× its creator's followers within 14 days. I move it into the brand's niche, change at least three elements and post within 48 hours. Alat Mansiya launched this way: each Short reached 1.1K–1.6K views on a brand-new channel.",
+      ar:"كل فكرة تبدأ من صيغة مجرّبة: فيديو وصل إلى 20 ضعف متابعي صاحبه خلال 14 يومًا. أنقلها إلى مجال العلامة مع تغيير 3 عناصر على الأقل، وأنشرها خلال 48 ساعة. بهذه الطريقة انطلقت «آلات منسية»: كل Short وصل إلى 1.1–1.6 ألف مشاهدة من قناة جديدة."}},
+  {k:{en:"English and Arabic copy",ar:"الكتابة بالعربية والإنجليزية"},
+   v:{en:"Arabic is my native language and I write professional English: hooks, captions and on-screen text in both.",
+      ar:"العربية لغتي الأم وأكتب الإنجليزية بمستوى مهني: الافتتاحيات والكابشن والنصوص على الشاشة باللغتين."}}
+];
+
+const CHANNELS = [
+  {fav:"U", site:"Um Hamza", crumb:"instagram.com › umhamzahfoodstuff", href:"https://www.instagram.com/umhamzahfoodstuff/",
+   title:{en:"Um Hamza: reels and community for a UAE family food brand",ar:"أم حمزة: ريلز ومجتمع لعلامة أغذية عائلية في الإمارات"},
+   meta:{en:"Social media and content · Oct 2024 – present · Instagram, Facebook, TikTok, Snapchat",ar:"السوشال ميديا والمحتوى · أكتوبر 2024 – حتى الآن · إنستغرام، فيسبوك، تيك توك، سناب شات"},
+   snippet:{en:"A family food brand with shops at Global Village and in Abu Dhabi malls. **Human stories and place reels** beat product posts by a wide margin, so the calendar is built around them. On TikTok, where 70% of views come from search, the plan is **searchable product explainers** with the product name in the first two seconds.",
+            ar:"علامة أغذية عائلية لها محلات في القرية العالمية ومولات أبوظبي. **القصص الإنسانية وريلز المكان** تتفوّق بفارق كبير على منشورات المنتجات، لذلك تُبنى الخطة حولها. وعلى تيك توك، حيث 70% من المشاهدات من البحث، الخطة **فيديوهات شرح قابلة للبحث** يُذكر فيها اسم المنتج في أول ثانيتين."},
+   kpis:[
+     {n:"479K",en:"views on one human-story reel (Instagram + Facebook)",ar:"مشاهدة لريل قصة إنسانية واحد (إنستغرام + فيسبوك)"},
+     {n:"408.3K",en:"Instagram views in 28 days, up 21.6%",ar:"مشاهدة على إنستغرام خلال 28 يومًا، بارتفاع 21.6%"},
+     {n:"75.8%",en:"of those views from non-followers",ar:"منها من غير المتابعين"},
+     {n:"55.7K",en:"Instagram followers",ar:"متابع على إنستغرام"}
+   ],
+   links:[
+     {en:"Instagram",ar:"إنستغرام",url:"https://www.instagram.com/umhamzahfoodstuff/"},
+     {en:"Facebook reels",ar:"ريلز فيسبوك",url:"https://www.facebook.com/umhamzaforfoodstuff/reels/"},
+     {en:"TikTok",ar:"تيك توك",url:"https://www.tiktok.com/@umhamzafoodstuff"},
+     {en:"Snapchat",ar:"سناب شات",url:"https://www.snapchat.com/add/umhamzafood"}
+   ]},
+  {fav:"آ", site:"Alat Mansiya · آلات منسية", crumb:"youtube.com › @AlatMansiya", href:"https://www.youtube.com/@AlatMansiya",
+   title:{en:"Alat Mansiya (Forgotten Machines): an Arabic documentary channel, from long episodes to Shorts",ar:"آلات منسية: قناة وثائقية عربية، من الحلقة الطويلة إلى الـShorts"},
+   meta:{en:"Channel launch and growth · Nov 2026 – present · YouTube, Instagram, TikTok, Facebook",ar:"إطلاق القناة وتنميتها · نوفمبر 2026 – حتى الآن · يوتيوب، إنستغرام، تيك توك، فيسبوك"},
+   snippet:{en:"Arabic documentaries about machines that came before their time: supersonic jets, airships, trains and ships. Each long episode is cut into **Shorts with a one-line hook** («a plane that lands before it takes off»), then adapted for Instagram, TikTok and Facebook.",
+            ar:"وثائقيات عربية عن آلات سبقت عصرها: طائرات أسرع من الصوت، ومناطيد، وقطارات، وسفن. كل حلقة طويلة تُقطَّع إلى **Shorts بافتتاحية من سطر واحد** («طائرة تصل قبل أن تُقلع»)، ثم تُكيَّف لإنستغرام وتيك توك وفيسبوك."},
+   kpis:[
+     {n:"5.9K",en:"YouTube views in the first 5 days",ar:"مشاهدة على يوتيوب في أول 5 أيام"},
+     {n:"1.1K–1.6K",en:"views per Short on a new channel",ar:"مشاهدة لكل Short من قناة جديدة"},
+     {n:"1 → 4",en:"long episode cut into 4 Shorts",ar:"حلقة طويلة قُطّعت إلى 4 Shorts"}
+   ],
+   links:[
+     {en:"YouTube channel",ar:"قناة يوتيوب",url:"https://www.youtube.com/@AlatMansiya"},
+     {en:"Concorde episode",ar:"حلقة الكونكورد",url:"https://www.youtube.com/watch?v=vvHh9GGg8FM"},
+     {en:"Instagram",ar:"إنستغرام",url:"https://www.instagram.com/alatmansiya/"},
+     {en:"Facebook",ar:"فيسبوك",url:"https://www.facebook.com/AlatMansiya"}
+   ]}
+];
+
+const HOWTO = {
+  en:[
+    "**Format first.** Find a format that is already outperforming, and the hook it uses.",
+    "**Scene sheet.** Each shot's job and timing, the on-screen text, the voice line and the sound.",
+    "**Shoot.** Phone or camera, one clean light, close-ups for texture, and quick on-camera moments directed with the team on site.",
+    "**Edit natively.** Hook in the first two seconds, captions, safe areas and correct Arabic right-to-left text; a separate cut per platform.",
+    "**Publish and read.** Check at 1 h, 6 h and 24 h, then double down on what works or change the hook."
+  ],
+  ar:[
+    "**الصيغة أولًا.** اختيار صيغة تتفوّق فعلًا الآن، ومعرفة الافتتاحية التي تستخدمها.",
+    "**جدول المشاهد.** وظيفة كل لقطة ومدتها، والنص على الشاشة، وسطر التعليق الصوتي، والصوت.",
+    "**التصوير.** بالجوال أو الكاميرا، بإضاءة واحدة نظيفة، ولقطات قريبة للملمس، ولحظات سريعة أمام الكاميرا أوجّه فيها الفريق في المكان.",
+    "**مونتاج أصيل لكل منصة.** الافتتاحية في أول ثانيتين، والترجمة على الشاشة، والمناطق الآمنة، والنص العربي من اليمين إلى اليسار بشكل صحيح؛ ونسخة منفصلة لكل منصة.",
+    "**النشر والقراءة.** المتابعة بعد ساعة و6 ساعات و24 ساعة، ثم مضاعفة ما ينجح أو تغيير الافتتاحية."
+  ]
+};
+
+const VTOOLS = ["CapCut","Canva","Meta Business Suite","TikTok Studio","YouTube Studio","Snapchat Profile Manager","Remotion","FFmpeg","Whisper (auto captions)"];
 
 const DEEP = [
   {
@@ -633,7 +794,7 @@ const EARLIER = [
 
 const PAA = [
   {q:{en:"Which roles are you open to?",ar:"ما الوظائف المناسبة؟"},
-   a:{en:"Digital Marketing Manager or Specialist, SEO Specialist or Lead, E-commerce and Performance Marketing, and Arabic Content Lead roles in the UAE.",ar:"مدير أو أخصائي تسويق رقمي، أخصائي أو قائد سيو، تسويق المتاجر الإلكترونية والأداء، وقيادة المحتوى العربي في الإمارات."}},
+   a:{en:"Social Media Specialist or Manager, Digital Marketing Manager or Specialist, SEO Specialist or Lead, E-commerce and Performance Marketing, and Arabic Content Lead roles in the UAE.",ar:"أخصائي أو مدير سوشال ميديا، مدير أو أخصائي تسويق رقمي، أخصائي أو قائد سيو، تسويق المتاجر الإلكترونية والأداء، وقيادة المحتوى العربي في الإمارات."}},
   {q:{en:"Do you write in both Arabic and English?",ar:"هل الكتابة بالعربية والإنجليزية معًا؟"},
    a:{en:"Yes. Arabic is my native language and I write professional English. I have written website copy, product descriptions and SEO articles in both.",ar:"نعم. العربية لغتي الأم وأكتب الإنجليزية بمستوى مهني. كتبت محتوى مواقع وأوصاف منتجات ومقالات سيو باللغتين."}},
   {q:{en:"Which tools do you use every day?",ar:"ما الأدوات المستخدمة يوميًا؟"},
@@ -654,6 +815,7 @@ const TIMELINE = [
 ];
 
 const SKILLS = [
+  {h:{en:"Social media and video",ar:"السوشال ميديا والفيديو"},items:["Instagram Reels","TikTok","YouTube Shorts","Snapchat",{en:"Short-form editing",ar:"مونتاج الفيديو القصير"},{en:"Scene sheets and scripts",ar:"جداول المشاهد والنصوص"},{en:"Community management",ar:"إدارة المجتمع"},{en:"Creator collaborations",ar:"التعاون مع صنّاع المحتوى"},{en:"Content calendars",ar:"تقويم المحتوى"},{en:"Platform analytics",ar:"تحليلات المنصات"}]},
   {h:{en:"SEO",ar:"السيو"},items:["Technical SEO","On-page SEO","E-commerce SEO","Arabic SEO","Schema markup","Keyword research","Content audits","Core Web Vitals"]},
   {h:{en:"Paid social and analytics",ar:"الإعلانات والتحليلات"},items:["Meta Ads","Catalog ads","Retargeting","GA4","Google Tag Manager","Meta Pixel","Google Search Console","Conversion tracking"]},
   {h:{en:"Content",ar:"المحتوى"},items:[{en:"Arabic copywriting",ar:"كتابة إعلانية بالعربية"},{en:"English copywriting",ar:"كتابة إعلانية بالإنجليزية"},{en:"SEO articles",ar:"مقالات سيو"},{en:"Product descriptions",ar:"أوصاف المنتجات"},{en:"Landing-page copy",ar:"نصوص صفحات الهبوط"},{en:"Content strategy",ar:"استراتيجية المحتوى"},{en:"Editorial QA",ar:"التدقيق التحريري"}]},
@@ -721,6 +883,58 @@ function renderCases(){
       ${c.deep ? `<a class="deep-link" href="#${c.deep}">${esc(t(UI.readCase))}</a>` : ""}
     </article>`).join("");
 }
+
+const PLAY_ICON = '<svg width="20" height="20" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>';
+const host = u => /instagram/.test(u) ? "Instagram" : /tiktok/.test(u) ? "TikTok" : /facebook/.test(u) ? "Facebook" : /youtu/.test(u) ? "YouTube" : "";
+
+function renderReels(){
+  document.getElementById("shorts").innerHTML = SHORTS.map(s => {
+    const title = esc(t(s.title));
+    let frame;
+    if (s.yt) {
+      frame = `<img src="https://i.ytimg.com/vi/${s.yt}/hqdefault.jpg" alt="" loading="lazy" width="480" height="360">
+        <button type="button" class="yt-play" data-yt="${s.yt}" aria-label="${esc(t(UI.play))}: ${title}"><span>${PLAY_ICON}</span></button>`;
+    } else {
+      const inner = `<span class="ig">${esc(s.plat.split(" · ")[0])}</span><q lang="ar">${esc(s.poster)}</q><small>${esc(s.plat.split(" · ")[1] || "")}</small>`;
+      frame = s.url ? `<a class="poster" href="${s.url}" ${ext} aria-label="${title}">${inner}</a>` : `<div class="poster">${inner}</div>`;
+    }
+    const link = s.yt ? `https://www.youtube.com/shorts/${s.yt}` : s.url;
+    return `<article class="short">
+      <div class="frame">${frame}</div>
+      <div class="body">
+        <span class="plat">${esc(s.plat)}</span>
+        <h4>${title}</h4>
+        <p class="views" style="margin:0"><strong>${esc(s.n)}</strong>${esc(t(s.stat))}${link ? `<br><a href="${link}" ${ext}>${esc(t(UI.watchOn))} ${host(link)} ↗</a>` : ""}</p>
+      </div>
+    </article>`;
+  }).join("");
+  document.getElementById("fit").innerHTML = FIT.map(f => `<div><b>${esc(t(f.k))}</b><p>${esc(t(f.v))}</p></div>`).join("");
+  document.getElementById("channels").innerHTML = CHANNELS.map(c => `
+    <article class="result">
+      <div class="crumb">
+        <span class="fav" aria-hidden="true">${esc(c.fav)}</span>
+        <span class="site"><b>${esc(c.site)}</b><span>${esc(c.crumb)}</span></span>
+      </div>
+      <h3><a href="${c.href}" ${ext}>${esc(t(c.title))}</a></h3>
+      <p class="meta">${esc(t(c.meta))}</p>
+      <p class="snippet">${rich(t(c.snippet))}</p>
+      <div class="kpis" style="margin-top:0;margin-bottom:14px">${c.kpis.map(r => `<div class="kpi"><strong>${esc(r.n)}</strong><span>${esc(t(r))}</span></div>`).join("")}</div>
+      <div class="sitelinks">${c.links.filter(l => l.url).map(l => `<a href="${l.url}" ${ext}><b>${esc(t(l))}</b><span>${esc(l.url.replace(/^https?:\/\/(www\.)?/,"").replace(/\/$/,""))}</span></a>`).join("")}</div>
+    </article>`).join("");
+  document.getElementById("howto").innerHTML = t(HOWTO).map(x => `<li><span>${esc(x).replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")}</span></li>`).join("");
+  document.getElementById("vtools").innerHTML = VTOOLS.map(x => `<span>${esc(x)}</span>`).join("");
+}
+
+document.addEventListener("click", e => {
+  const b = e.target.closest(".yt-play");
+  if (!b) return;
+  const f = document.createElement("iframe");
+  f.src = `https://www.youtube-nocookie.com/embed/${b.dataset.yt}?autoplay=1&playsinline=1&rel=0`;
+  f.title = b.getAttribute("aria-label");
+  f.allow = "autoplay; encrypted-media; picture-in-picture; fullscreen";
+  f.allowFullscreen = true;
+  b.parentElement.replaceChildren(f);
+});
 
 function renderSamples(){
   document.getElementById("samples").innerHTML = SAMPLES.map(s => `
@@ -811,7 +1025,7 @@ function render(){
   document.title = lang === "ar" ? "مجد سلامي | سيو وكتابة محتوى وتسويق رقمي في دبي" : "Majd Salami | SEO, Content & Digital Marketing in Dubai";
   document.getElementById("btn-en").setAttribute("aria-pressed", lang === "en");
   document.getElementById("btn-ar").setAttribute("aria-pressed", lang === "ar");
-  renderStatic(); renderCases(); renderDeep(); renderSamples(); renderRest(); renderPanel();
+  renderStatic(); renderReels(); renderCases(); renderDeep(); renderSamples(); renderRest(); renderPanel();
 }
 
 function setLang(l){
