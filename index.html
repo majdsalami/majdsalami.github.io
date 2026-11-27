@@ -3,19 +3,19 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Majd Salami | SEO, Content &amp; Digital Marketing in Dubai</title>
-<meta name="description" content="Majd Salami: reels and social media, SEO, Arabic and English content, Meta Ads and conversion tracking for UAE brands. Case studies with platform insights, Search Console, GA4 and Ads Manager evidence.">
+<title>Majd Salami | Meta Ads, SEO &amp; Reels for UAE Brands · Dubai</title>
+<meta name="description" content="Majd Salami grows UAE brands' sales: Meta Ads checked against real store orders, Arabic and English SEO, and an AI-assisted reels studio. Case studies with store, Ads Manager, Search Console and GA4 evidence.">
 <link rel="canonical" href="https://majdsalami.github.io/">
 <link rel="icon" type="image/png" href="favicon.png">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://majdsalami.github.io/">
-<meta property="og:title" content="Majd Salami | SEO, Content &amp; Digital Marketing">
-<meta property="og:description" content="Majd Salami: reels and social media, SEO, Arabic and English content, Meta Ads and conversion tracking for UAE brands. Case studies with platform insights, Search Console, GA4 and Ads Manager evidence.">
+<meta property="og:title" content="Majd Salami | Meta Ads, SEO &amp; Reels for UAE Brands">
+<meta property="og:description" content="Majd Salami grows UAE brands' sales: Meta Ads checked against real store orders, Arabic and English SEO, and an AI-assisted reels studio. Case studies with store, Ads Manager, Search Console and GA4 evidence.">
 <meta property="og:image" content="https://majdsalami.github.io/og-cover.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="627">
 <meta name="twitter:card" content="summary_large_image">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Majd Salami", "url": "https://majdsalami.github.io/", "image": "https://majdsalami.github.io/og-cover.jpg", "jobTitle": "SEO and Digital Marketing Specialist", "address": {"@type": "PostalAddress", "addressLocality": "Dubai", "addressCountry": "AE"}, "knowsLanguage": ["ar", "en"], "sameAs": ["https://www.linkedin.com/in/majd-salami/"]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Majd Salami", "url": "https://majdsalami.github.io/", "image": "https://majdsalami.github.io/og-cover.jpg", "jobTitle": "Digital Marketing, Meta Ads and SEO Specialist", "address": {"@type": "PostalAddress", "addressLocality": "Dubai", "addressCountry": "AE"}, "knowsLanguage": ["ar", "en"], "sameAs": ["https://www.linkedin.com/in/majd-salami/"]}</script>
 <style>body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
 </head>
 <body>
@@ -225,6 +225,23 @@ mark{background:var(--mark);color:var(--mark-ink);padding:0 2px;border-radius:2p
 @media (max-width:640px){.contact-band{grid-template-columns:minmax(0,1fr)}}
 footer{padding-block:20px 40px;color:var(--muted);font-size:13px;border-top:1px solid var(--line)}
 
+/* services */
+.svcs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:14px}
+.svc{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:18px 18px 16px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.svc .num{font:500 12px var(--f-mono);letter-spacing:.06em;text-transform:uppercase;color:var(--accent)}
+.svc h3{margin:0;font:600 18px/1.35 var(--f-display);text-wrap:balance}
+.svc ul{margin:0;padding-inline-start:18px;font-size:14px}
+.svc li{margin-block:3px}
+.svc li::marker{color:var(--accent)}
+.svc .proof{margin:2px 0 0;padding:10px 12px;border-radius:8px;background:var(--accent-soft);font-size:13.5px;line-height:1.5}
+.svc .proof strong{font:600 17px var(--f-display);direction:ltr;unicode-bidi:isolate}
+.svc .acts{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;margin-top:auto;padding-top:6px}
+.svc .wa{font-size:13.5px;font-weight:500;text-decoration:none;padding:7px 12px;border-radius:8px;background:var(--accent);color:var(--surface)}
+.svc .wa:hover{filter:brightness(1.08)}
+.svc .more{font-size:13.5px;text-decoration:none}
+.svc .more:hover{text-decoration:underline}
+@media (max-width:640px){.svcs{grid-template-columns:minmax(0,1fr)}}
+
 /* reels and social media */
 .sec h3.subh{font:600 17px/1.4 var(--f-display);margin:26px 0 10px}
 .fit{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:14px}
@@ -284,6 +301,12 @@ footer{padding-block:20px 40px;color:var(--muted);font-size:13px;border-top:1px 
           <p class="label" id="f-label" data-t="inShort"></p>
           <p class="answer" data-t="answer"></p>
           <div class="kpis" id="kpis"></div>
+        </section>
+
+        <section class="sec" id="services">
+          <h2 data-t="svcH"></h2>
+          <p class="sub" data-t="svcSub"></p>
+          <div class="svcs" id="svcs"></div>
         </section>
 
         <section class="sec" id="reels">
@@ -370,15 +393,16 @@ const CONTACT = {
 const PHOTO = "data:image/jpeg;base64,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";
 
 const UI = {
-  query:{en:"majd salami seo content marketing uae",ar:"مجد سلامي سيو كتابة محتوى تسويق الإمارات"},
-  count:{en:"About 2,000+ published articles · 2,850+ ad-driven purchases · SEO since 2012",ar:"نحو 2,000+ مقال منشور · 2,850+ عملية شراء من الإعلانات · سيو منذ 2012"},
+  query:{en:"majd salami meta ads seo reels uae",ar:"مجد سلامي إعلانات ميتا سيو ريلز الإمارات"},
+  count:{en:"AED 160K+ ad spend managed · 2,000+ published articles · 479K views on one reel · SEO since 2012",ar:"إنفاق إعلاني أدرته تجاوز 160 ألف درهم · 2,000+ مقال منشور · 479 ألف مشاهدة لريل واحد · سيو منذ 2012"},
   inShort:{en:"In short",ar:"باختصار"},
   answer:{
-    en:"I plan and run digital growth for UAE brands: technical and e-commerce **SEO**, **bilingual Arabic and English content**, **Meta Ads**, and GA4, GTM and Meta Pixel **tracking** that ties ad spend to orders. Most recently I built Freshety's full marketing setup from zero, I run SEO, ads, **reels** and social media for Um Hamza, and I launched the Arabic documentary channel Alat Mansiya on YouTube.",
-    ar:"أخطط وأنفّذ النمو الرقمي لعلامات تجارية في الإمارات: **سيو** تقني وسيو للمتاجر، **محتوى بالعربية والإنجليزية**، **إعلانات Meta**، و**تتبّع** عبر GA4 وGTM وMeta Pixel يربط الإنفاق الإعلاني بالطلبات. آخر أعمالي بناء البنية التسويقية الكاملة لمتجر «فريشتي» من الصفر، وإدارة السيو والإعلانات و**الريلز** والسوشال ميديا لـ«أم حمزة»، وإطلاق قناة «آلات منسية» الوثائقية العربية على يوتيوب."
+    en:"I grow sales for UAE brands and judge every ad by **real store orders**, not by what the ad platform claims. I run **Meta Ads**, Arabic and English **SEO**, **reels** made with an AI-assisted production system I direct, and the GA4, GTM and Meta Pixel **tracking** that ties spend to orders. For Um Hamza, my best ad period returned **AED 7.49 in store sales for every ad dirham**. I also built Freshety's marketing setup from zero and launched the Arabic documentary channel Alat Mansiya.",
+    ar:"أنمّي مبيعات العلامات التجارية في الإمارات، وأحكم على كل إعلان من **طلبات المتجر الفعلية** لا من أرقام المنصة الإعلانية. أدير **إعلانات Meta**، و**السيو** بالعربية والإنجليزية، و**الريلز** عبر نظام إنتاج بالذكاء الاصطناعي أديره بنفسي، و**التتبّع** عبر GA4 وGTM وMeta Pixel الذي يربط الإنفاق بالطلبات. مع «أم حمزة» حققت أفضل فترة إعلانية **7.49 درهم مبيعات في المتجر مقابل كل درهم إعلان**. وبنيت البنية التسويقية لـ«فريشتي» من الصفر، وأطلقت قناة «آلات منسية» الوثائقية العربية."
   },
   tabs:[
     {id:"top",en:"All",ar:"الكل"},
+    {id:"services",en:"Services",ar:"الخدمات"},
     {id:"reels",en:"Reels & social",ar:"الريلز والسوشال"},
     {id:"work",en:"Case studies",ar:"دراسات حالة"},
     {id:"deep",en:"Deep dives",ar:"دراسات مفصّلة"},
@@ -387,6 +411,10 @@ const UI = {
     {id:"skills",en:"Skills",ar:"المهارات"},
     {id:"contact",en:"Contact",ar:"تواصل"}
   ],
+  svcH:{en:"What I can do for your business",ar:"ماذا أقدّم لعملك"},
+  svcSub:{en:"Four services, each with a result you can check below. Message me on WhatsApp with your website or account and I'll reply with a first read.",ar:"أربع خدمات، ولكل خدمة نتيجة يمكنك التحقق منها في الصفحة. أرسل لي رابط موقعك أو حسابك على واتساب وأرد عليك بقراءة أولية."},
+  waCta:{en:"Talk on WhatsApp",ar:"تواصل على واتساب"},
+  seeProof:{en:"See the proof ↓",ar:"شاهد الدليل ↓"},
   reelsH:{en:"Reels and social media",ar:"الريلز وإدارة السوشال ميديا"},
   reelsSub:{en:"Short-form video and channel management on Instagram, TikTok, Facebook, Snapchat and YouTube. Every number comes from the platform's own insights.",ar:"فيديو قصير وإدارة حسابات على إنستغرام وتيك توك وفيسبوك وسناب شات ويوتيوب. كل رقم هنا من لوحة إحصاءات المنصة نفسها."},
   shortsH:{en:"Short videos",ar:"فيديوهات قصيرة"},
@@ -413,15 +441,15 @@ const UI = {
   contactSub:{en:"Based in Dubai. Email or WhatsApp is the fastest way to reach me.",ar:"مقيم في دبي. البريد الإلكتروني أو واتساب أسرع طريقة للتواصل."},
   copy:{en:"Copy",ar:"نسخ"},
   copied:{en:"Copied",ar:"تم النسخ"},
-  footer:{en:"Majd Salami · Dubai, UAE · Updated November 2026",ar:"مجد سلامي · دبي، الإمارات · آخر تحديث نوفمبر 2026"},
+  footer:{en:"Majd Salami · Dubai, UAE · Updated 28 November 2026",ar:"مجد سلامي · دبي، الإمارات · آخر تحديث 28 نوفمبر 2026"},
   results:{en:"Results",ar:"النتائج"}
 };
 
 const KPIS = [
-  {n:"2,000+",en:"Arabic SEO articles written and optimized",ar:"مقال عربي متوافق مع السيو، كتابةً وتحسينًا"},
-  {n:"1,100+",en:"articles you can open today on 4 public author pages",ar:"مقال يمكن فتحه الآن على 4 صفحات كاتب عامة"},
-  {n:"2,850+",en:"website purchases from Meta Ads I managed for Um Hamza",ar:"عملية شراء من إعلانات Meta التي أديرها لمتجر أم حمزة"},
-  {n:"4.0x",en:"blended return on AED 158K+ ad spend",ar:"عائد على إنفاق إعلاني تجاوز 158 ألف درهم"}
+  {n:"7.49x",en:"store sales per ad dirham, Um Hamza's best period (8–12 Nov 2026)",ar:"مبيعات في المتجر لكل درهم إعلان، أفضل فترة لأم حمزة (8–12 نوفمبر 2026)"},
+  {n:"AED 31.5",en:"ad spend per store order in the same period (77 orders)",ar:"تكلفة إعلانية لكل طلب في المتجر في الفترة نفسها (77 طلبًا)"},
+  {n:"5.7x",en:"store sales per ad dirham, Jan–Oct 2026 (AED 882K on AED 154K)",ar:"مبيعات لكل درهم إعلان، يناير–أكتوبر 2026 (882 ألفًا مقابل 154 ألف درهم)"},
+  {n:"479K",en:"views on one Um Hamza reel (Instagram + Facebook)",ar:"مشاهدة لريل واحد لأم حمزة (إنستغرام + فيسبوك)"}
 ];
 
 const CASES = [
@@ -435,27 +463,27 @@ const CASES = [
     },
     did:{
       en:[
-        "Plan and run Meta Ads across sales, catalog and retargeting campaigns, moving budget to what converts. The top campaign reached 823 purchases at AED 44 each and a 5.0x ROAS.",
-        "Build landing pages and improve WooCommerce product pages, navigation and checkout.",
-        "Technical and on-page SEO: metadata, internal linking, Core Web Vitals and page speed.",
-        "Create product bundles and quantity offers, such as twin packs and daily and weekly frozen meal bundles.",
-        "Manage content for Instagram, TikTok and Snapchat.",
-        "Configure GA4 and Meta Pixel for conversion reporting and attribution."
+        "Found and fixed broken purchase tracking: Meta had been counting purchases that never happened. Since then every ad is checked against real WooCommerce orders.",
+        "Plan and run Meta Ads with a per-ad funnel read (hook, hold, click, cart, checkout, cost per purchase) and written stop rules, moving budget to what sells.",
+        "Ran the National Day 55 offer and a Global Village creator campaign; the best ad, a real-footage holiday breakfast reel, bought customers at AED 35–40 each.",
+        "Designed bundles and quantity offers: twin packs, a breakfast pack and frozen meal bundles, plus cart cross-sells.",
+        "Technical and on-page SEO, landing pages and WooCommerce product pages, navigation and checkout.",
+        "Run organic content on Instagram, Facebook, TikTok and Snapchat, and a live sales and ads dashboard in Looker Studio."
       ],
       ar:[
-        "تخطيط وإدارة حملات Meta للمبيعات والكتالوج وإعادة الاستهداف، وتوجيه الميزانية إلى ما يحقق تحويلات. أفضل حملة حققت 823 عملية شراء بتكلفة 44 درهمًا للعملية وعائد 5.0 أضعاف.",
-        "بناء صفحات هبوط وتحسين صفحات المنتجات والتنقل وخطوات الدفع في ووكومرس.",
-        "سيو تقني وداخلي: الميتا، الروابط الداخلية، Core Web Vitals وسرعة الصفحات.",
-        "تصميم باقات وعروض كميات، مثل عروض العبوتين وباقات الوجبات المجمدة اليومية والأسبوعية.",
-        "إدارة المحتوى على إنستغرام وتيك توك وسناب شات.",
-        "إعداد GA4 وMeta Pixel لتقارير التحويل والإسناد."
+        "اكتشاف خلل تتبّع المشتريات وإصلاحه: كان Meta يحسب عمليات شراء لم تحدث. ومنذ ذلك الحين يُقارَن كل إعلان بطلبات ووكومرس الفعلية.",
+        "تخطيط وإدارة إعلانات Meta بقراءة لمسار كل إعلان (الافتتاحية، والاستمرار، والنقر، والسلة، والدفع، وتكلفة الشراء) وقواعد إيقاف مكتوبة، وتوجيه الميزانية إلى ما يبيع.",
+        "إدارة عرض عيد الاتحاد 55 وحملة صانعة محتوى في القرية العالمية؛ وأفضل إعلان، ريل فطور إجازة بلقطات حقيقية، جلب العميل بتكلفة 35–40 درهمًا.",
+        "تصميم الباقات وعروض الكميات: عروض العبوتين، وباقة الفطور، وباقات المجمدات، مع اقتراحات إضافية في السلة.",
+        "سيو تقني وداخلي، وصفحات هبوط، وتحسين صفحات المنتجات والتنقل وخطوات الدفع في ووكومرس.",
+        "إدارة المحتوى العضوي على إنستغرام وفيسبوك وتيك توك وسناب شات، ولوحة مبيعات وإعلانات مباشرة على Looker Studio."
       ]
     },
     results:[
-      {n:"AED 158K+",en:"Meta ad spend managed, Jun 2025 – Oct 2026",ar:"إنفاق إعلاني على Meta تمت إدارته، يونيو 2025 – أكتوبر 2026"},
-      {n:"2,850+",en:"website purchases from 32 campaigns (Meta-reported)",ar:"عملية شراء من 32 حملة (حسب تقارير Meta)"},
-      {n:"4.0x",en:"blended return on ad spend",ar:"عائد إجمالي على الإنفاق الإعلاني"},
-      {n:"~40%",en:"of tracked store revenue from organic search and organic social (GA4)",ar:"من إيرادات المتجر المتتبَّعة من البحث العضوي والسوشال العضوي (GA4)"}
+      {n:"7.49x",en:"store sales per ad dirham, best period (8–12 Nov 2026)",ar:"مبيعات لكل درهم إعلان، أفضل فترة (8–12 نوفمبر 2026)"},
+      {n:"AED 31.5",en:"ad spend per store order, same period",ar:"تكلفة إعلانية لكل طلب، الفترة نفسها"},
+      {n:"AED 35–40",en:"cost per purchase of the best ad",ar:"تكلفة الشراء لأفضل إعلان"},
+      {n:"AED 160K+",en:"Meta ad spend managed, to 30 Oct 2026",ar:"إنفاق على Meta تمت إدارته حتى 30 أكتوبر 2026"}
     ],
     links:[
       {en:"Live store",ar:"المتجر",url:"https://umhamzah.com/"},
@@ -463,7 +491,7 @@ const CASES = [
       {en:"Instagram",ar:"إنستغرام",url:"https://www.instagram.com/umhamzahfoodstuff/"},
       {en:"Facebook",ar:"فيسبوك",url:"https://www.facebook.com/umhamzaforfoodstuff"}
     ],
-    tags:["Meta Ads","Catalog ads","Retargeting","WooCommerce","Technical SEO","GA4"]
+    tags:["Meta Ads","Store-verified results","Tracking fix","Offers & bundles","Creator campaign","WooCommerce","Technical SEO","GA4"]
   },
   {
     fav:"F", site:"Freshety", crumb:"freshety.com › about", href:"https://www.freshety.com/",
@@ -529,6 +557,29 @@ const CASES = [
   }
 ];
 
+const SERVICES = [
+  {k:"ads", t:{en:"Meta Ads judged by store orders",ar:"إعلانات Meta يُحكم عليها بطلبات المتجر"},
+   get:{en:["Account and pixel audit before any spend","Campaign structure, offers and creative tests","A funnel read for every ad, with written stop and scale rules","Weekly report in store orders and sales, not platform claims"],
+        ar:["تدقيق الحساب والبكسل قبل أي صرف","هيكلة الحملات والعروض واختبارات الإعلانات","قراءة مسار كل إعلان، مع قواعد مكتوبة للإيقاف والتوسيع","تقرير أسبوعي بطلبات المتجر ومبيعاته، لا بأرقام المنصة"]},
+   n:"7.49x", proof:{en:"store sales per ad dirham for Um Hamza, 8–12 Nov 2026",ar:"مبيعات لكل درهم إعلان لأم حمزة، 8–12 نوفمبر 2026"}, href:"#uh-case",
+   wa:{en:"Hi Majd, I'd like to talk about Meta Ads for my business.",ar:"مرحبًا مجد، أريد التحدث عن إعلانات Meta لعملي."}},
+  {k:"track", t:{en:"Tracking you can trust",ar:"تتبّع يمكن الوثوق به"},
+   get:{en:["GA4, Google Tag Manager and Meta Pixel set-up or audit","Purchase funnel events tested end to end","Fake or duplicate conversions found and removed","A live Looker Studio dashboard of sales, sources and ads"],
+        ar:["إعداد أو تدقيق GA4 وGoogle Tag Manager وMeta Pixel","اختبار أحداث مسار الشراء من البداية للنهاية","كشف التحويلات الوهمية أو المكررة وإزالتها","لوحة Looker Studio مباشرة للمبيعات والمصادر والإعلانات"]},
+   n:"AED 971", proof:{en:"Meta's purchase value matched the store's ad-tagged orders to the dirham after the clean-up",ar:"قيمة المشتريات في Meta طابقت طلبات المتجر الموسومة بالدرهم بعد التنظيف"}, href:"#uh-case",
+   wa:{en:"Hi Majd, I'd like a tracking audit for my store.",ar:"مرحبًا مجد، أريد تدقيق التتبّع لمتجري."}},
+  {k:"seo", t:{en:"SEO in Arabic and English",ar:"سيو بالعربية والإنجليزية"},
+   get:{en:["Technical and on-page SEO, schema and site speed","Service and product pages built around search intent","Arabic articles that rank in Gulf search","Site migrations planned so rankings survive"],
+        ar:["سيو تقني وداخلي، وبيانات منظمة، وسرعة الموقع","صفحات خدمات ومنتجات مبنية على نية البحث","مقالات عربية تتصدّر البحث الخليجي","تخطيط نقل المواقع بحيث يبقى الترتيب"]},
+   n:"+76%", proof:{en:"organic clicks from the UAE for OZONE (140 → 247), 27 Jul – 25 Oct 2026",ar:"نقرات عضوية من الإمارات لأوزون (140 ← 247)، 27 يوليو – 25 أكتوبر 2026"}, href:"#oz-case",
+   wa:{en:"Hi Majd, I'd like to talk about SEO for my website.",ar:"مرحبًا مجد، أريد التحدث عن سيو موقعي."}},
+  {k:"reels", t:{en:"Reels and social media studio",ar:"استوديو ريلز وسوشال ميديا"},
+   get:{en:["A monthly plan built on formats that are already winning","Daily reels through an AI-assisted studio, real footage where it sells","A separate cut for Instagram, TikTok, Facebook, Snapchat and YouTube","Creator campaigns read in store orders"],
+        ar:["خطة شهرية مبنية على صيغ رابحة فعلًا","ريلز يومية عبر استوديو بالذكاء الاصطناعي، ولقطات حقيقية حيث تبيع","نسخة منفصلة لإنستغرام وتيك توك وفيسبوك وسناب شات ويوتيوب","حملات صنّاع محتوى تُقرأ بطلبات المتجر"]},
+   n:"479K", proof:{en:"views on one Um Hamza reel; a creator wave brought 47 orders in 27 hours",ar:"مشاهدة لريل واحد لأم حمزة؛ وموجة صانعة محتوى جلبت 47 طلبًا في 27 ساعة"}, href:"#reels",
+   wa:{en:"Hi Majd, I'd like to talk about reels and social media for my brand.",ar:"مرحبًا مجد، أريد التحدث عن الريلز والسوشال ميديا لعلامتي."}}
+];
+
 /* Reels and social media. To add a video: one line in SHORTS.
    yt = YouTube video ID (plays in the card); url = link out (Instagram, TikTok, Facebook). A card with neither shows its stats only. */
 const SHORTS = [
@@ -540,31 +591,31 @@ const SHORTS = [
    n:"17.2K", stat:{en:"views · 43 shares · 27 saves",ar:"مشاهدة · 43 مشاركة · 27 حفظًا"}},
   {plat:"Instagram · Um Hamza", poster:"كل عام وراية الإمارات عالية", url:"https://www.instagram.com/reel/DfO4STUgOXm/",
    title:{en:"UAE Flag Day reel",ar:"ريل يوم العلم"},
-   n:"24.3K", stat:{en:"views · 482 shares · 139 saves · 18 s average watch",ar:"مشاهدة · 482 مشاركة · 139 حفظًا · 18 ثانية متوسط المشاهدة"}},
+   n:"24.3K", stat:{en:"views · 521 shares · 28 new followers · 18 s average watch",ar:"مشاهدة · 521 مشاركة · 28 متابعًا جديدًا · 18 ثانية متوسط المشاهدة"}},
   {plat:"Instagram · Um Hamza", poster:"القرية العالمية · جناح القرية القطرية · محل 20", url:"https://www.instagram.com/reel/DQBOIhqDbl2/",
    title:{en:"Global Village shop launch",ar:"افتتاح محل القرية العالمية"},
    n:"102.8K", stat:{en:"views · 355 new followers (with a paid boost)",ar:"مشاهدة · 355 متابعًا جديدًا (بترويج مدفوع)"}},
+  {plat:"YouTube Shorts + Facebook · Alat Mansiya", yt:"QLU_9iheWio",
+   title:{en:"A plane that grows 25 cm in flight",ar:"صدّق أو لا تصدّق: طائرة تتمدد 25 سم في الجو"},
+   n:"24K", stat:{en:"Facebook views in the first week · 1,357 on YouTube",ar:"مشاهدة على فيسبوك في الأسبوع الأول · 1,357 على يوتيوب"}},
+  {plat:"YouTube Shorts + Facebook · Alat Mansiya", yt:"_bJRkLzId7I",
+   title:{en:"The first plane with a broken nose",ar:"أول طائرة في العالم بأنف مكسور!"},
+   n:"22.9K", stat:{en:"Facebook views · 2,009 on YouTube, 68% viewed through",ar:"مشاهدة على فيسبوك · 2,009 على يوتيوب بإكمال 68%"}},
   {plat:"YouTube Shorts · Alat Mansiya", yt:"lEhS068iqPY",
    title:{en:"A plane that lands before it takes off",ar:"ليس سحرًا: طائرة تصل قبل أن تُقلع!"},
-   n:"1.5K", stat:{en:"views in the first days",ar:"مشاهدة في الأيام الأولى"}},
+   n:"1.6K", stat:{en:"YouTube views in the first week",ar:"مشاهدة على يوتيوب في الأسبوع الأول"}},
   {plat:"YouTube Shorts · Alat Mansiya", yt:"K065Wjyuvrc",
    title:{en:"Guess where the first supersonic flight went",ar:"ليست نيويورك… خمّن وجهة أول رحلة أسرع من الصوت"},
-   n:"1.4K", stat:{en:"views in the first days",ar:"مشاهدة في الأيام الأولى"}},
-  {plat:"YouTube Shorts · Alat Mansiya", yt:"QLU_9iheWio",
-   title:{en:"A plane that grows 25 cm in flight",ar:"صدّق أو لا تصدّق: طائرة تتمدد 25 سم في الجو"},
-   n:"1.2K", stat:{en:"views in the first days",ar:"مشاهدة في الأيام الأولى"}},
-  {plat:"YouTube Shorts · Alat Mansiya", yt:"_bJRkLzId7I",
-   title:{en:"The first plane with a broken nose",ar:"أول طائرة في العالم بأنف مكسور!"},
-   n:"1.1K", stat:{en:"views in the first days",ar:"مشاهدة في الأيام الأولى"}}
+   n:"1.5K", stat:{en:"YouTube views in the first week",ar:"مشاهدة على يوتيوب في الأسبوع الأول"}}
 ];
 
 const FIT = [
-  {k:{en:"Shoot, edit and create",ar:"التصوير والمونتاج وصناعة المحتوى"},
-   v:{en:"I take each reel from brief to post: hook, script, a scene sheet with every shot and on-screen line, filming direction for the branch team, then the edit, captions and cover. The formats work for any product or space: close-up textures, before and after, pull-back reveals and walkthroughs.",
-      ar:"أتولّى الريل من الفكرة حتى النشر: الافتتاحية، والنص، وجدول مشاهد فيه كل لقطة وكل سطر على الشاشة، وتوجيه فريق الفرع أثناء التصوير، ثم المونتاج والترجمة على الشاشة والغلاف. وهي صيغ تصلح لأي منتج أو مكان: لقطات الملمس القريبة، وقبل وبعد، والكشف بالرجوع، والجولات داخل المكان."}},
+  {k:{en:"Create at team volume",ar:"إنتاج بحجم فريق"},
+   v:{en:"I run an AI-assisted content studio. I write the hooks and the scene sheet, shoot or direct the real footage, and approve every cut; AI handles the edit, captions, motion graphics and presenter voices, each labelled where it applies. The result: daily reels across several accounts without a full production team.",
+      ar:"أدير استوديو محتوى يعمل بالذكاء الاصطناعي. أكتب الافتتاحيات وجدول المشاهد، وأصوّر اللقطات الحقيقية أو أوجّه تصويرها، وأعتمد كل نسخة؛ ويتولى الذكاء الاصطناعي المونتاج والترجمة على الشاشة والموشن جرافيك وأصوات المقدّمين، مع الإشارة إليها حيث يلزم. النتيجة: ريلز يومية لعدة حسابات من غير فريق إنتاج كامل."}},
   {k:{en:"Own the channels",ar:"إدارة الحسابات"},
-   v:{en:"Daily content for Um Hamza on Instagram (55.7K followers), Facebook, TikTok and Snapchat, plus the Alat Mansiya channels. Each platform gets its own cut, hook and length; nothing is reposted as-is.",
-      ar:"محتوى يومي لأم حمزة على إنستغرام (55.7 ألف متابع) وفيسبوك وتيك توك وسناب شات، إضافة إلى حسابات «آلات منسية». لكل منصة نسختها وافتتاحيتها وطولها، ولا يُنقل شيء كما هو."}},
+   v:{en:"Daily content for Um Hamza on Instagram (55.6K followers), Facebook, TikTok and Snapchat, plus the Alat Mansiya channels. Each platform gets its own cut, hook and length; nothing is reposted as-is.",
+      ar:"محتوى يومي لأم حمزة على إنستغرام (55.6 ألف متابع) وفيسبوك وتيك توك وسناب شات، إضافة إلى حسابات «آلات منسية». لكل منصة نسختها وافتتاحيتها وطولها، ولا يُنقل شيء كما هو."}},
   {k:{en:"Build and engage the community",ar:"بناء المجتمع والتفاعل"},
    v:{en:"Replies to comments and DMs (27 new conversations in 28 days), collab reels with Abu Dhabi creators (one reached 76K views), and launch content that turns followers into visitors: the Global Village shop reel reached 102.8K views and 355 new followers.",
       ar:"الرد على التعليقات والرسائل (27 محادثة جديدة خلال 28 يومًا)، وريلز تعاون مع صنّاع محتوى في أبوظبي (أحدها وصل إلى 76 ألف مشاهدة)، ومحتوى افتتاحات يحوّل المتابع إلى زائر: ريل محل القرية العالمية وصل إلى 102.8 ألف مشاهدة و355 متابعًا جديدًا."}},
@@ -572,8 +623,8 @@ const FIT = [
    v:{en:"I read every post at 1 h, 6 h and 24 h and log reach, shares, saves, follows and watch time. Over 28 days Instagram views rose 21.6% to 408.3K, 75.8% of them from non-followers, and the Flag Day reel brought 80% of that month's post follows.",
       ar:"أقرأ كل منشور بعد ساعة و6 ساعات و24 ساعة، وأسجّل الوصول والمشاركات والحفظ والمتابعات ومدة المشاهدة. خلال 28 يومًا ارتفعت مشاهدات إنستغرام 21.6% إلى 408.3 ألف، 75.8% منها من غير المتابعين، وجلب ريل يوم العلم 80% من متابعات المنشورات في ذلك الشهر."}},
   {k:{en:"Trend spotting",ar:"رصد الترندات"},
-   v:{en:"Every idea starts from a proven format: a video that reached 20× its creator's followers within 14 days. I move it into the brand's niche, change at least three elements and post within 48 hours. Alat Mansiya launched this way: each Short reached 1.1K–1.6K views on a brand-new channel.",
-      ar:"كل فكرة تبدأ من صيغة مجرّبة: فيديو وصل إلى 20 ضعف متابعي صاحبه خلال 14 يومًا. أنقلها إلى مجال العلامة مع تغيير 3 عناصر على الأقل، وأنشرها خلال 48 ساعة. بهذه الطريقة انطلقت «آلات منسية»: كل Short وصل إلى 1.1–1.6 ألف مشاهدة من قناة جديدة."}},
+   v:{en:"Every idea starts from a proven format: a video that reached 20× its creator's followers within 14 days. I move it into the brand's niche, change at least three elements and post within 48 hours. Alat Mansiya launched this way: two of its first Shorts passed 22K views on Facebook in their first week.",
+      ar:"كل فكرة تبدأ من صيغة مجرّبة: فيديو وصل إلى 20 ضعف متابعي صاحبه خلال 14 يومًا. أنقلها إلى مجال العلامة مع تغيير 3 عناصر على الأقل، وأنشرها خلال 48 ساعة. بهذه الطريقة انطلقت «آلات منسية»: اثنان من أول مقاطعها القصيرة تجاوزا 22 ألف مشاهدة على فيسبوك في أسبوعهما الأول."}},
   {k:{en:"English and Arabic copy",ar:"الكتابة بالعربية والإنجليزية"},
    v:{en:"Arabic is my native language and I write professional English: hooks, captions and on-screen text in both.",
       ar:"العربية لغتي الأم وأكتب الإنجليزية بمستوى مهني: الافتتاحيات والكابشن والنصوص على الشاشة باللغتين."}}
@@ -589,7 +640,7 @@ const CHANNELS = [
      {n:"479K",en:"views on one human-story reel (Instagram + Facebook)",ar:"مشاهدة لريل قصة إنسانية واحد (إنستغرام + فيسبوك)"},
      {n:"408.3K",en:"Instagram views in 28 days, up 21.6%",ar:"مشاهدة على إنستغرام خلال 28 يومًا، بارتفاع 21.6%"},
      {n:"75.8%",en:"of those views from non-followers",ar:"منها من غير المتابعين"},
-     {n:"55.7K",en:"Instagram followers",ar:"متابع على إنستغرام"}
+     {n:"55.6K",en:"Instagram followers",ar:"متابع على إنستغرام"}
    ],
    links:[
      {en:"Instagram",ar:"إنستغرام",url:"https://www.instagram.com/umhamzahfoodstuff/"},
@@ -603,10 +654,11 @@ const CHANNELS = [
    snippet:{en:"Arabic documentaries about machines that came before their time: supersonic jets, airships, trains and ships. Each long episode is cut into **Shorts with a one-line hook** («a plane that lands before it takes off»), then adapted for Instagram, TikTok and Facebook.",
             ar:"وثائقيات عربية عن آلات سبقت عصرها: طائرات أسرع من الصوت، ومناطيد، وقطارات، وسفن. كل حلقة طويلة تُقطَّع إلى **Shorts بافتتاحية من سطر واحد** («طائرة تصل قبل أن تُقلع»)، ثم تُكيَّف لإنستغرام وتيك توك وفيسبوك."},
    kpis:[
-     {n:"5.9K",en:"YouTube views in the first 5 days",ar:"مشاهدة على يوتيوب في أول 5 أيام"},
-     {n:"1.1K–1.6K",en:"views per Short on a new channel",ar:"مشاهدة لكل Short من قناة جديدة"},
-     {n:"1 → 4",en:"long episode cut into 4 Shorts",ar:"حلقة طويلة قُطّعت إلى 4 Shorts"}
+     {n:"24K",en:"Facebook views on one Short, first week",ar:"مشاهدة على فيسبوك لـShort واحد، الأسبوع الأول"},
+     {n:"45.6%",en:"average watch of the 12-minute episode",ar:"متوسط مشاهدة الحلقة ذات الـ12 دقيقة"},
+     {n:"1 → 7",en:"long episode cut into 7 Shorts",ar:"حلقة طويلة قُطّعت إلى 7 Shorts"}
    ],
+   deep:"am-case",
    links:[
      {en:"YouTube channel",ar:"قناة يوتيوب",url:"https://www.youtube.com/@AlatMansiya"},
      {en:"Concorde episode",ar:"حلقة الكونكورد",url:"https://www.youtube.com/watch?v=vvHh9GGg8FM"},
@@ -617,67 +669,98 @@ const CHANNELS = [
 
 const HOWTO = {
   en:[
-    "**Format first.** Find a format that is already outperforming, and the hook it uses.",
-    "**Scene sheet.** Each shot's job and timing, the on-screen text, the voice line and the sound.",
-    "**Shoot.** Phone or camera, one clean light, close-ups for texture, and quick on-camera moments directed with the team on site.",
-    "**Edit natively.** Hook in the first two seconds, captions, safe areas and correct Arabic right-to-left text; a separate cut per platform.",
-    "**Publish and read.** Check at 1 h, 6 h and 24 h, then double down on what works or change the hook."
+    "**Format first.** Pick a format that is already outperforming, and study the hook it uses.",
+    "**Scene sheet.** I write each shot's job and timing, the on-screen text, the voice line and the sound, and approve it before anything is rendered or paid for.",
+    "**Real footage + AI.** Real product and people shots from me or the team on site; AI builds the edit, captions, motion graphics and, where approved, the voice. Generated visuals are labelled.",
+    "**Check before posting.** A virality pre-check on the opening seconds, a transcript check of the voice, and the brand's claims and offer rules.",
+    "**Publish and read.** A separate cut per platform, then reads at 1 h, 6 h and 24 h: double down on what works or change the hook."
   ],
   ar:[
-    "**الصيغة أولًا.** اختيار صيغة تتفوّق فعلًا الآن، ومعرفة الافتتاحية التي تستخدمها.",
-    "**جدول المشاهد.** وظيفة كل لقطة ومدتها، والنص على الشاشة، وسطر التعليق الصوتي، والصوت.",
-    "**التصوير.** بالجوال أو الكاميرا، بإضاءة واحدة نظيفة، ولقطات قريبة للملمس، ولحظات سريعة أمام الكاميرا أوجّه فيها الفريق في المكان.",
-    "**مونتاج أصيل لكل منصة.** الافتتاحية في أول ثانيتين، والترجمة على الشاشة، والمناطق الآمنة، والنص العربي من اليمين إلى اليسار بشكل صحيح؛ ونسخة منفصلة لكل منصة.",
-    "**النشر والقراءة.** المتابعة بعد ساعة و6 ساعات و24 ساعة، ثم مضاعفة ما ينجح أو تغيير الافتتاحية."
+    "**الصيغة أولًا.** اختيار صيغة تتفوّق فعلًا الآن، ودراسة الافتتاحية التي تستخدمها.",
+    "**جدول المشاهد.** أكتب وظيفة كل لقطة ومدتها، والنص على الشاشة، وسطر التعليق الصوتي، والصوت، وأعتمده قبل أي تصيير أو صرف.",
+    "**لقطات حقيقية + ذكاء اصطناعي.** لقطات حقيقية للمنتج والناس أصوّرها أنا أو الفريق في المكان؛ ويبني الذكاء الاصطناعي المونتاج والترجمة والموشن جرافيك، والصوت حين يُعتمد. والصور المولّدة يُشار إليها.",
+    "**فحص قبل النشر.** فحص لتوقّع الانتشار في الثواني الأولى، ومطابقة نص الصوت، وقواعد العلامة في الادعاءات والعروض.",
+    "**النشر والقراءة.** نسخة منفصلة لكل منصة، ثم قراءة بعد ساعة و6 ساعات و24 ساعة: مضاعفة ما ينجح أو تغيير الافتتاحية."
   ]
 };
 
-const VTOOLS = ["CapCut","Canva","Meta Business Suite","TikTok Studio","YouTube Studio","Snapchat Profile Manager","Remotion","FFmpeg","Whisper (auto captions)"];
+const VTOOLS = ["Claude Code (AI production agent)","CapCut","Canva","Remotion","Motion Canvas","Manim","FFmpeg","Kling (video generation)","ElevenLabs and Munsit (AI voices)","Whisper (transcripts)","Meta Business Suite","TikTok Studio","YouTube Studio","Snapchat Profile Manager"];
 
 const DEEP = [
   {
     id:"uh-case",
     eyebrow:{en:"Performance marketing · E-commerce",ar:"تسويق الأداء · متجر إلكتروني"},
-    title:{en:"Um Hamza: growing a family food brand's online sales with Meta Ads",ar:"أم حمزة: تنمية مبيعات علامة أغذية عائلية أونلاين بإعلانات Meta"},
-    meta:{en:"umhamzah.com · Full-time since Oct 2024 · Data: Jun 2025 – Oct 2026 from Meta Ads Manager, GA4 and Instagram",ar:"umhamzah.com · دوام كامل منذ أكتوبر 2024 · البيانات: يونيو 2025 – أكتوبر 2026 من مدير إعلانات Meta وGA4 وإنستغرام"},
+    title:{en:"Um Hamza: more online food sales, measured by real store orders",ar:"أم حمزة: مبيعات أونلاين أكثر، تُقاس بطلبات المتجر الفعلية"},
+    meta:{en:"umhamzah.com · Full-time since Oct 2024 · Data: WooCommerce orders, Meta Ads Manager, GA4 and Instagram, Jan – Nov 2026",ar:"umhamzah.com · دوام كامل منذ أكتوبر 2024 · البيانات: طلبات ووكومرس، ومدير إعلانات Meta، وGA4، وإنستغرام، يناير – نوفمبر 2026"},
     kpis:[
-      {n:"AED 158K+",en:"ad spend managed",ar:"إنفاق إعلاني تمت إدارته"},
-      {n:"2,850+",en:"website purchases (Meta-reported)",ar:"عملية شراء من الموقع (حسب Meta)"},
-      {n:"4.0x",en:"blended ROAS across 32 campaigns",ar:"عائد إجمالي على الإنفاق في 32 حملة"},
-      {n:"AED 55",en:"average cost per purchase",ar:"متوسط تكلفة عملية الشراء"}
+      {n:"7.49x",en:"store sales per ad dirham, 8–12 Nov 2026",ar:"مبيعات لكل درهم إعلان، 8–12 نوفمبر 2026"},
+      {n:"AED 31.5",en:"ad spend per store order, same period",ar:"تكلفة إعلانية لكل طلب، الفترة نفسها"},
+      {n:"5.7x",en:"store sales per ad dirham, Jan–Oct 2026",ar:"مبيعات لكل درهم إعلان، يناير–أكتوبر 2026"},
+      {n:"AED 971",en:"Meta value matched store orders to the dirham (13 Nov)",ar:"قيمة Meta طابقت طلبات المتجر بالدرهم (13 نوفمبر)"}
     ],
     blocks:[
       {h:{en:"Starting point",ar:"نقطة البداية"}},
-      {p:{en:"Um Hamza is a family food maker in Ajman, selling since 1999, with a WooCommerce store that delivers to all seven emirates. When I joined in October 2024, the brand needed steady online orders instead of occasional spikes, and a clear view of which ads actually sell.",ar:"أم حمزة مصنع أغذية عائلي في عجمان، منتجاته في السوق منذ 1999، ولديه متجر ووكومرس يوصل إلى الإمارات السبع. عند انضمامي في أكتوبر 2024 كان المطلوب طلبات أونلاين ثابتة بدل الارتفاعات المتقطعة، ورؤية واضحة لأي إعلان يبيع فعلًا."}},
-      {h:{en:"How the ad account is built",ar:"كيف بُني الحساب الإعلاني"}},
-      {p:{en:"Each stage of the funnel has its own campaign, budget and creative, so every result can be traced to one decision.",ar:"لكل مرحلة من القمع حملتها وميزانيتها وإبداعها الخاص، حتى تُنسب كل نتيجة إلى قرار واحد."}},
+      {p:{en:"Um Hamza is a family food maker in Ajman, selling since 1999, with a WooCommerce store that delivers to all seven emirates and shops at Global Village and in Abu Dhabi malls. The brief: steady online orders instead of occasional spikes, and a clear answer to which ads actually sell.",ar:"أم حمزة مصنع أغذية عائلي في عجمان، منتجاته في السوق منذ 1999، ولديه متجر ووكومرس يوصل إلى الإمارات السبع، ومحلات في القرية العالمية ومولات أبوظبي. المطلوب: طلبات أونلاين ثابتة بدل الارتفاعات المتقطعة، وجواب واضح عن أي إعلان يبيع فعلًا."}},
+      {h:{en:"First fix: the tracking was counting purchases that never happened",ar:"الإصلاح الأول: التتبّع كان يحسب مشتريات لم تحدث"}},
+      {p:{en:"Before trusting any number, I audited the pixel. Two manual “Purchase” events fired when a page was merely opened, and a foreign pixel and a Snap pixel were loading on the site too. Meta was reporting purchases that never happened, so every return figure looked better than reality. After the clean-up the account runs on clean data from 18 Oct 2026. The check: on 13 Nov, Meta's click-through purchase value matched the ad-tagged store orders to the dirham, AED 971.",ar:"قبل الوثوق بأي رقم، دقّقت البكسل. كان حدثا «Purchase» يدويان ينطلقان بمجرد فتح صفحة، وكان بكسل غريب وبكسل سناب شات يُحمَّلان أيضًا على الموقع. أي أن Meta كان يسجّل مشتريات لم تحدث، فبدت كل أرقام العائد أفضل من الواقع. بعد التنظيف صار الحساب يعمل على بيانات نظيفة منذ 18 أكتوبر 2026. والدليل: في 13 نوفمبر طابقت قيمة المشتريات بعد النقر في Meta طلبات المتجر الموسومة بالإعلانات بالدرهم، 971 درهمًا."}},
+      {h:{en:"November, phase by phase, judged by store orders",ar:"نوفمبر مرحلةً مرحلة، والحكم لطلبات المتجر"}},
+      {p:{en:"One sales campaign with separate ad sets for broad audiences, warm audiences and tests. Each phase is judged by all store sales against ad spend, because that is the number the business banks.",ar:"حملة مبيعات واحدة بمجموعات إعلانية منفصلة للجمهور الواسع والجمهور الدافئ والتجارب. وكل مرحلة يُحكم عليها بمبيعات المتجر كلها مقابل الإنفاق الإعلاني، لأن هذا هو الرقم الذي يدخل حساب العمل."}},
       {table:{
-        head:{en:["Funnel stage","Campaign","Purchases","ROAS","Cost / purchase"],ar:["مرحلة القمع","الحملة","المشتريات","العائد","تكلفة الشراء"]},
+        head:{en:["Phase","Dates","What was live","Ad spend","Store orders / sales","Sales ÷ spend"],ar:["المرحلة","التاريخ","ما كان يعمل","الإنفاق","الطلبات / المبيعات","المبيعات ÷ الإنفاق"]},
         rows:[
-          [{en:"Scale (CBO)",ar:"التوسّع (CBO)"},"UM_HAMZA_SALES_CBO_300AED-28","823","5.01x","AED 44"],
-          [{en:"Influencer video",ar:"فيديو المؤثرين"},"New Sales Campaign-influence","237","4.71x","AED 47"],
-          [{en:"Catalog",ar:"الكتالوج"},"cataloge-sales-new","189","3.36x","AED 63"],
-          [{en:"Lookalike audience",ar:"جمهور مشابه"},"LOOKLIKE_75AED_18","122","4.90x","AED 45"],
-          [{en:"Frozen range launch",ar:"إطلاق المجمدات"},"RET | SALES | FROZEN LAUNCH","65","4.30x","AED 44"],
-          [{en:"Retargeting buyers (180 days)",ar:"إعادة استهداف المشترين (180 يومًا)"},"RT | Purchasers 180d | Static","27","5.13x","AED 41"]
-        ]
+          [{en:"Before",ar:"قبل"},{en:"19–31 Oct",ar:"19–31 أكتوبر"},{en:"old structure",ar:"الهيكل القديم"},"AED 5,662","116 / AED 26,700","4.72x"],
+          [{en:"Phase 1",ar:"المرحلة 1"},{en:"1–7 Nov",ar:"1–7 نوفمبر"},{en:"proven + new ads, no offer",ar:"إعلانات مجرّبة وجديدة، بلا عرض"},"AED 2,666","78 / AED 18,259","6.85x"],
+          [{en:"Phase 2",ar:"المرحلة 2"},{en:"8–12 Nov",ar:"8–12 نوفمبر"},{en:"National Day 55 code, new sets",ar:"كود عيد الاتحاد 55، ومجموعات جديدة"},"AED 2,423","77 / AED 18,142","7.49x"],
+          [{en:"Phase 3",ar:"المرحلة 3"},{en:"13–14 Nov",ar:"13–14 نوفمبر"},{en:"test set + catalog",ar:"مجموعة تجارب + كتالوج"},"AED 1,003","28 / AED 6,316","6.30x"],
+          [{en:"Total",ar:"المجموع"},{en:"1–14 Nov",ar:"1–14 نوفمبر"},"","AED 6,092","183 / AED 42,716","7.01x"]
+        ],
+        note:{en:"Store sales = all WooCommerce orders in the window, organic included, divided by Meta ad spend. Test orders excluded.",ar:"المبيعات = كل طلبات ووكومرس في الفترة، ومنها الطلبات العضوية، مقسومة على إنفاق Meta. استُبعدت طلبات الاختبار."}
       }},
-      {fig:{src:"img/uh-ads.jpg",w:1254,h:522,cap:{en:"Meta Ads Manager, 1 Jun 2025 – 27 Oct 2026, sorted by spend. Revenue columns are hidden on purpose.",ar:"مدير إعلانات Meta، 1 يونيو 2025 – 27 أكتوبر 2026، مرتبة حسب الإنفاق. أعمدة الإيرادات مخفية عمدًا."}}},
-      {h:{en:"What the data taught me",ar:"ما تعلّمته من الأرقام"}},
+      {h:{en:"Which ads sold, and which didn't",ar:"أي الإعلانات باعت، وأيها لم يبع"}},
+      {table:{
+        head:{en:["Ad","Format","Spend","Purchases","Cost / purchase","Hook rate"],ar:["الإعلان","الصيغة","الإنفاق","المشتريات","تكلفة الشراء","نسبة الافتتاحية"]},
+        rows:[
+          ["«ريوق الإجازة»",{en:"real-footage occasion reel",ar:"ريل مناسبة بلقطات حقيقية"},"AED 438","11","AED 39.8","33%"],
+          ["«الدرهم الخامس»",{en:"offer motion graphic",ar:"موشن جرافيك للعرض"},"AED 2,394","48","AED 49.9","18%"],
+          [{en:"Catalog + discount card",ar:"كتالوج + بطاقة خصم"},{en:"catalog carousel",ar:"كاروسيل كتالوج"},"AED 1,574","26","AED 50–75","—"],
+          ["«برطمان لك»",{en:"single-product reel",ar:"ريل منتج واحد"},"AED 765","13","AED 58.8","14%"],
+          ["«مونتكم»",{en:"static image",ar:"تصميم ثابت"},"AED 197","1","AED 197","—"]
+        ],
+        note:{en:"Meta Ads Manager, purchases after a click, 1–14 Nov 2026. Hook rate = viewers who keep watching past the opening seconds.",ar:"مدير إعلانات Meta، المشتريات بعد النقر، 1–14 نوفمبر 2026. نسبة الافتتاحية = من يكمل المشاهدة بعد الثواني الأولى."}
+      }},
       {list:{
         en:[
-          "Consolidating budget into one CBO campaign scaled it to 823 purchases at AED 44 each, the lowest cost of any large campaign.",
-          "Video beats static for cold audiences: the relaunched winning video returned 7.9x and the influencer campaign 4.7x.",
-          "Past buyers are the most efficient audience: retargeting 180-day purchasers returned 5.1x at AED 41 per purchase."
+          "Occasions beat products. The holiday breakfast reel had the account's best hook rate (28–39%) and kept buying customers at AED 35–40 with a 5.8x return; single-product reels cost about AED 94 per purchase.",
+          "Real footage sells. Ads made from real footage returned 5–6.75x in store sales; AI-made ad creatives returned 2.05–2.32x. So AI production serves organic content and quick tests, and real footage carries the paid budget.",
+          "Statics and boosted organic posts lost (AED 90–180 per purchase) and were stopped on the written rules."
         ],
         ar:[
-          "تجميع الميزانية في حملة CBO واحدة رفعها إلى 823 عملية شراء بتكلفة 44 درهمًا للعملية، وهي الأقل بين الحملات الكبيرة.",
-          "الفيديو يتفوّق على التصاميم الثابتة مع الجمهور الجديد: إعادة إطلاق الفيديو الرابح حققت عائد 7.9 أضعاف، وحملة المؤثرين 4.7 أضعاف.",
-          "المشترون السابقون هم الجمهور الأكفأ: إعادة استهدافهم خلال 180 يومًا حققت 5.1 أضعاف بتكلفة 41 درهمًا للعملية."
+          "المناسبة تتفوّق على المنتج. ريل فطور الإجازة سجّل أفضل نسبة افتتاحية في الحساب (28–39%)، واستمر يجلب العملاء بتكلفة 35–40 درهمًا وعائد 5.8 أضعاف؛ بينما كلّفت ريلز المنتج الواحد نحو 94 درهمًا للشراء.",
+          "اللقطات الحقيقية تبيع. الإعلانات المصنوعة من لقطات حقيقية حققت 5–6.75 أضعاف في مبيعات المتجر، والإعلانات المصنوعة بالذكاء الاصطناعي 2.05–2.32 فقط. لذلك يخدم الإنتاج بالذكاء الاصطناعي المحتوى العضوي والتجارب السريعة، وتحمل اللقطات الحقيقية الميزانية المدفوعة.",
+          "التصاميم الثابتة والمنشورات العضوية المروَّجة خسرت (90–180 درهمًا للشراء) وأُوقفت وفق القواعد المكتوبة."
+        ]
+      }},
+      {h:{en:"The campaign average, for the full picture",ar:"متوسط الحملة كاملًا، للصورة الكاملة"}},
+      {p:{en:"Across the whole November campaign (1–23 Nov), losing tests included, Meta counted 176 purchases after a click at AED 60.7 each and a 3.52x return, against AED 98.5 and 2.45x for October's campaign on the same clean data. The 20% National Day code helped, so part of that gain is the offer.",ar:"على مستوى حملة نوفمبر كلها (1–23 نوفمبر)، ومعها التجارب الخاسرة، سجّل Meta ‏176 عملية شراء بعد النقر بتكلفة 60.7 درهمًا للعملية وعائد 3.52 أضعاف، مقابل 98.5 درهمًا و2.45 أضعاف لحملة أكتوبر على البيانات النظيفة نفسها. وساعد كود عيد الاتحاد (خصم 20%)، فجزء من هذا التحسن يعود إلى العرض."}},
+      {h:{en:"A creator wave, measured in orders",ar:"موجة صانعة محتوى، تُقاس بالطلبات"}},
+      {p:{en:"For the Global Village shop, a Dubai creator posted Snapchat stories on 25 Nov. In the next 27 hours the store took 47 orders worth AED 11,217, against 17 orders and AED 3,399 in the same hours a week earlier. The lift came through brand search, direct visits and her bio link, not ad clicks, which is why creator results are read from store orders.",ar:"لمحل القرية العالمية نشرت صانعة محتوى من دبي ستوريات سناب شات يوم 25 نوفمبر. خلال الـ27 ساعة التالية استقبل المتجر 47 طلبًا بقيمة 11,217 درهمًا، مقابل 17 طلبًا و3,399 درهمًا في الساعات نفسها قبل أسبوع. جاء الارتفاع من البحث باسم العلامة والزيارات المباشرة ورابط حسابها، لا من نقرات الإعلانات، ولهذا تُقرأ نتائج صنّاع المحتوى من طلبات المتجر."}},
+      {h:{en:"How decisions are made",ar:"كيف تُتّخذ القرارات"}},
+      {list:{
+        en:[
+          "**Decision log.** Every call is written down with its data, what would prove it wrong and a date to check it. 31 entries so far; the ones that turned out wrong are marked wrong.",
+          "**Stop and scale rules.** An ad stops at AED 150 spent with no sale, or when its cost per purchase passes 1.5× the target; it graduates at 10 sales.",
+          "**Per-ad funnel read** every few days: hook, hold, click, cart, checkout and cost per purchase. Overlapping audiences are cut (one set overlapped 41% with the others and was stopped).",
+          "**Live dashboard.** Store sales, traffic sources and the ad funnel in one Looker Studio report."
+        ],
+        ar:[
+          "**سجل القرارات.** كل قرار يُكتب مع بياناته، وما الذي يثبت خطأه، وموعد مراجعته. 31 قرارًا حتى الآن، والقرارات التي ثبت خطؤها مكتوب عليها «خطأ».",
+          "**قواعد الإيقاف والتوسيع.** يتوقف الإعلان عند 150 درهمًا بلا بيع، أو إذا تجاوزت تكلفة الشراء 1.5 ضعف الهدف؛ ويُرقّى عند 10 مبيعات.",
+          "**قراءة مسار كل إعلان** كل بضعة أيام: الافتتاحية، والاستمرار، والنقر، والسلة، والدفع، وتكلفة الشراء. ويُزال تداخل الجماهير (مجموعة تداخلت 41% مع غيرها فأُوقفت).",
+          "**لوحة مباشرة.** مبيعات المتجر ومصادر الزيارات ومسار الإعلانات في تقرير واحد على Looker Studio."
         ]
       }},
       {h:{en:"Store and organic channels",ar:"المتجر والقنوات المجانية"}},
-      {p:{en:"Paid traffic only pays off if the store converts. Alongside the ads I worked on product pages, navigation, checkout and on-page SEO. In GA4, organic search and organic social now bring about 40% of tracked store revenue.",ar:"الزيارات المدفوعة لا تربح إلا إذا كان المتجر يحوّل. إلى جانب الإعلانات عملت على صفحات المنتجات والتنقل وخطوات الدفع والسيو الداخلي. في GA4 يجلب البحث العضوي والسوشال العضوي اليوم نحو 40% من إيرادات المتجر المتتبَّعة."}},
+      {p:{en:"Paid traffic only pays off if the store converts. Alongside the ads I worked on product pages, navigation, checkout and on-page SEO, and added bundles and cart cross-sells. Over 12 months the store took 4,552 orders with an average basket of AED 194 before delivery. Labneh is in 55% of orders, and 74% of customers bought only once, so retention and bundles are the next lever.",ar:"الزيارات المدفوعة لا تربح إلا إذا كان المتجر يحوّل. إلى جانب الإعلانات عملت على صفحات المنتجات والتنقل وخطوات الدفع والسيو الداخلي، وأضفت الباقات والاقتراحات في السلة. خلال 12 شهرًا استقبل المتجر 4,552 طلبًا بمتوسط سلة 194 درهمًا قبل التوصيل. اللبنة موجودة في 55% من الطلبات، و74% من العملاء اشتروا مرة واحدة فقط، لذلك فإن الاحتفاظ بالعملاء والباقات هما الخطوة التالية."}},
       {bars:{
         cap:{en:"Share of tracked store revenue by channel, GA4, Jun 2025 – Oct 2026",ar:"حصة كل قناة من إيرادات المتجر المتتبَّعة، GA4، يونيو 2025 – أكتوبر 2026"},
         rows:[[{en:"Paid social",ar:"السوشال المدفوع"},36.9],[{en:"Direct",ar:"مباشر"},22.1],[{en:"Organic social",ar:"السوشال العضوي"},22.0],[{en:"Organic search",ar:"البحث العضوي"},17.7],[{en:"Other",ar:"أخرى"},1.3]]
@@ -685,8 +768,65 @@ const DEEP = [
       {fig:{src:"img/uh-before.jpg",w:1400,h:248,cap:{en:"March 2025, archived by the Wayback Machine: English only, with a short menu.",ar:"مارس 2025 من أرشيف Wayback Machine: باللغة الإنجليزية فقط وبقائمة قصيرة."}}},
       {fig:{src:"img/uh-after.jpg",w:1400,h:366,cap:{en:"October 2026: Arabic version, new categories such as Frozen Foods, and a keyword-led H1.",ar:"أكتوبر 2026: نسخة عربية، وفئات جديدة مثل المجمدات، وعنوان H1 مبني على الكلمات المفتاحية."}}},
       {h:{en:"Social content",ar:"محتوى السوشال ميديا"}},
-      {p:{en:"I plan and publish content for Instagram, TikTok and Snapchat: product guides, price posts, launches and event announcements such as the Global Village shop. The Instagram account has 55.6K followers and 827 posts.",ar:"أخطط وأنشر المحتوى على إنستغرام وتيك توك وسناب شات: أدلة المنتجات، ومنشورات الأسعار، والإطلاقات، وإعلانات الفعاليات مثل محل القرية العالمية. حساب إنستغرام فيه 55.6 ألف متابع و827 منشورًا."}},
+      {p:{en:"I plan and publish content for Instagram (55.6K followers), Facebook, TikTok and Snapchat: human stories, occasions, launches and product guides. The organic Instagram link brought 21% of site orders in 19–30 Oct. Full numbers are in the Reels section above.",ar:"أخطط وأنشر المحتوى على إنستغرام (55.6 ألف متابع) وفيسبوك وتيك توك وسناب شات: القصص الإنسانية، والمناسبات، والإطلاقات، وأدلة المنتجات. رابط إنستغرام العضوي جلب 21% من طلبات الموقع في 19–30 أكتوبر. الأرقام الكاملة في قسم الريلز أعلاه."}},
       {fig:{src:"img/uh-instagram-grid.jpg",w:1126,h:632,cap:{en:"Recent Instagram posts: product guides, offers and the Global Village shop launch.",ar:"منشورات حديثة على إنستغرام: أدلة المنتجات والعروض وافتتاح محل القرية العالمية."}}}
+    ]
+  },
+  {
+    id:"am-case",
+    eyebrow:{en:"Content studio · Channel launch",ar:"استوديو محتوى · إطلاق قناة"},
+    title:{en:"Alat Mansiya: launching an Arabic documentary channel from zero with an AI-assisted studio",ar:"آلات منسية: إطلاق قناة وثائقية عربية من الصفر باستوديو يعمل بالذكاء الاصطناعي"},
+    meta:{en:"youtube.com/@AlatMansiya · Launched 20 Nov 2026 · Data: YouTube Studio and Meta Business Suite, read 26 Nov 2026",ar:"youtube.com/@AlatMansiya · انطلقت 20 نوفمبر 2026 · البيانات: YouTube Studio وMeta Business Suite، قراءة 26 نوفمبر 2026"},
+    kpis:[
+      {n:"24K",en:"Facebook views on one Short in its first week",ar:"مشاهدة على فيسبوك لـShort واحد في أسبوعه الأول"},
+      {n:"22.9K",en:"Facebook views on another (17.1K people)",ar:"مشاهدة على فيسبوك لآخر (17.1 ألف شخص)"},
+      {n:"45.6%",en:"average watch of the 12-minute first episode",ar:"متوسط مشاهدة الحلقة الأولى ذات الـ12 دقيقة"},
+      {n:"68%",en:"viewed-through rate of the best Short on YouTube",ar:"نسبة إكمال أفضل Short على يوتيوب"}
+    ],
+    blocks:[
+      {h:{en:"The idea",ar:"الفكرة"}},
+      {p:{en:"Arabic documentaries about machines that came before their time and then disappeared: supersonic jets, airships, flying aircraft carriers, ground-effect ships. Each long episode is cut into Shorts with a one-line hook, then adapted for Facebook, Instagram and TikTok.",ar:"وثائقيات عربية عن آلات سبقت عصرها ثم اختفت: طائرات أسرع من الصوت، ومناطيد، وحاملات طائرات طائرة، وسفن تطير فوق الماء. كل حلقة طويلة تُقطَّع إلى Shorts بافتتاحية من سطر واحد، ثم تُكيَّف لفيسبوك وإنستغرام وتيك توك."}},
+      {h:{en:"How one person produces at team volume",ar:"كيف ينتج شخص واحد بحجم فريق"}},
+      {steps:{
+        en:[
+          "**Scene sheet first.** I write and approve the episode's scenes, hooks and on-screen lines before anything is rendered or paid for.",
+          "**Sourced facts.** Every claim is listed with its source, and a separate AI fact-checker reviews the script.",
+          "**Visuals.** Code animation (Motion Canvas, Manim, three.js, GSAP), archive photos, and generated reconstruction shots that carry an on-screen «إعادة بناء بصرية» (visual reconstruction) label.",
+          "**Voice and checks.** An AI narration voice, with a Whisper transcript check against the script, and a free virality pre-check on every Short before it goes out.",
+          "**Cost.** About 174 generation credits for the whole first episode: a 12-minute documentary plus its Shorts."
+        ],
+        ar:[
+          "**جدول المشاهد أولًا.** أكتب مشاهد الحلقة وافتتاحياتها ونصوصها على الشاشة وأعتمدها قبل أي تصيير أو صرف.",
+          "**معلومات موثّقة.** كل معلومة مكتوبة مع مصدرها، ومدقق حقائق آلي منفصل يراجع النص.",
+          "**الصورة.** رسوم متحركة بالكود (Motion Canvas وManim وthree.js وGSAP)، وصور أرشيفية، ولقطات إعادة بناء مولّدة تحمل على الشاشة عبارة «إعادة بناء بصرية».",
+          "**الصوت والفحص.** تعليق صوتي بالذكاء الاصطناعي، مع مطابقة نص Whisper بالنص المكتوب، وفحص مجاني لتوقّع الانتشار لكل Short قبل نشره.",
+          "**التكلفة.** نحو 174 رصيد توليد للحلقة الأولى كاملة: وثائقي من 12 دقيقة مع مقاطعه القصيرة."
+        ]
+      }},
+      {h:{en:"First-week results",ar:"نتائج الأسبوع الأول"}},
+      {table:{
+        head:{en:["Video","YouTube views","Facebook views","Note"],ar:["الفيديو","مشاهدات يوتيوب","مشاهدات فيسبوك","ملاحظة"]},
+        rows:[
+          [{en:"Short: the first plane with a broken nose",ar:"Short: أول طائرة بأنف مكسور"},"2,009","22,898",{en:"68% viewed on YouTube",ar:"68% إكمال على يوتيوب"}],
+          [{en:"Short: a plane that grows 25 cm in flight",ar:"Short: طائرة تتمدد 25 سم في الجو"},"1,357","24,000",{en:"best Facebook reach",ar:"أفضل وصول على فيسبوك"}],
+          [{en:"Episode 1: Concorde (12:20)",ar:"الحلقة 1: الكونكورد (12:20)"},"545","—",{en:"45.6% average watch, 3.7% CTR",ar:"45.6% متوسط مشاهدة، 3.7% نسبة نقر"}]
+        ],
+        note:{en:"YouTube Studio and Meta Business Suite, 20–26 Nov 2026. TikTok drew 99–140 views per video in the same week.",ar:"YouTube Studio وMeta Business Suite، 20–26 نوفمبر 2026. تيك توك جلب 99–140 مشاهدة لكل فيديو في الأسبوع نفسه."}
+      }},
+      {h:{en:"What the first week taught me",ar:"ما علّمني إياه الأسبوع الأول"}},
+      {list:{
+        en:[
+          "Facebook is the reach engine for this audience: the same Short got about 10× more views there than on YouTube.",
+          "People watch, but too few click: 45.6% average watch is strong, 3.7% click-through is weak. So episode 2 went out on 27 Nov with a three-way title and thumbnail test.",
+          "The «impossible machine» angle wins. Any Short that passes 10K views gets a part two."
+        ],
+        ar:[
+          "فيسبوك هو محرك الوصول لهذا الجمهور: الـShort نفسه حصد هناك نحو 10 أضعاف مشاهداته على يوتيوب.",
+          "الناس يشاهدون لكن القليل ينقر: متوسط المشاهدة 45.6% قوي، ونسبة النقر 3.7% ضعيفة. لذلك نُشرت الحلقة الثانية يوم 27 نوفمبر مع اختبار ثلاثي للعنوان والصورة المصغّرة.",
+          "زاوية «الآلة المستحيلة» هي الرابحة. أي Short يتجاوز 10 آلاف مشاهدة يحصل على جزء ثانٍ."
+        ]
+      }},
+      {p:{en:"The same studio produces Um Hamza's organic reels. There, AI handles the edit and the presenter voice, while real footage, real hands and my hooks keep it honest; paid ads use real footage, because it sells better.",ar:"الاستوديو نفسه ينتج ريلز أم حمزة العضوية. هناك يتولى الذكاء الاصطناعي المونتاج وصوت المقدّمة، بينما تحافظ اللقطات الحقيقية والأيدي الحقيقية وافتتاحياتي على المصداقية؛ أما الإعلانات المدفوعة فتعتمد اللقطات الحقيقية لأنها تبيع أكثر."}}
     ]
   },
   {
@@ -740,6 +880,8 @@ const DEEP = [
       {h:{en:"Results",ar:"النتائج"}},
       {fig:{src:"img/oz-sc-uae.jpg",w:1284,h:392,cap:{en:"Search Console, UAE only, 27 Jul – 25 Oct 2026: 247 clicks, up from 140 in the previous 3 months.",ar:"Search Console للإمارات فقط، 27 يوليو – 25 أكتوبر 2026: 247 نقرة مقابل 140 في الأشهر الثلاثة السابقة."}}},
       {fig:{src:"img/oz-ga4.jpg",w:1234,h:616,cap:{en:"GA4 traffic acquisition, 27 Jul – 25 Oct 2026: organic search brought 1,231 sessions and 80 of the site's 112 key events.",ar:"GA4، مصادر الزيارات، 27 يوليو – 25 أكتوبر 2026: البحث العضوي جلب 1,231 جلسة و80 من أصل 112 تحويلًا."}}},
+      {h:{en:"Next phase: moving the site without losing rankings",ar:"المرحلة التالية: نقل الموقع دون خسارة الترتيب"}},
+      {p:{en:"In November 2026 I planned the move from WordPress to a new site: 255 pages and items inventoried, 1,103 redirect rules, 4,514 internal links rewritten and 71 English URLs unified. It hasn't launched yet, so this is planning, not a result.",ar:"في نوفمبر 2026 خطّطت لنقل الموقع من ووردبريس إلى موقع جديد: جرد 255 صفحة وعنصرًا، و1,103 قواعد تحويل، وإعادة كتابة 4,514 رابطًا داخليًا، وتوحيد 71 رابطًا إنجليزيًا. لم يُطلق بعد، لذلك هذا تخطيط وليس نتيجة."}},
       {h:{en:"Next steps",ar:"الخطوات التالية"}},
       {list:{
         en:[
@@ -773,6 +915,9 @@ const SAMPLES = [
 ];
 
 const EARLIER = [
+  {name:"Milana",meta:{en:"Brand and content (freelance) · UAE · Oct – Nov 2026",ar:"الهوية والمحتوى (عمل حر) · الإمارات · أكتوبر – نوفمبر 2026"},
+   text:{en:"An auto-reply platform for Messenger, Instagram and Facebook comments. I built the brand guide from the official logo, produced the launch reel, adapted reels for the Iraqi and Libyan markets with local voices (6 ready for Libya), cut 4:5 feed versions for ads, and wrote a 24-post monthly plan. Creative delivery; performance results are not in yet.",
+         ar:"منصة رد آلي على ماسنجر وإنستغرام وتعليقات فيسبوك. بنيت دليل الهوية من الشعار الرسمي، وأنتجت ريل الإطلاق، وكيّفت ريلز للسوقين العراقي والليبي بأصوات محلية (6 جاهزة لليبيا)، وجهّزت نسخ 4:5 للإعلانات، وكتبت خطة شهرية من 24 منشورًا. تسليم إبداعي؛ نتائج الأداء لم تصدر بعد."}},
   {name:"Ozone Digital / Tour TravelDeal",deep:"oz-case",meta:{en:"Social Media Manager and SEO Content Writer · UAE · May 2022 – Jan 2024, plus SEO for ozs.ae in 2026",ar:"Social Media Manager and SEO Content Writer · الإمارات · مايو 2022 – يناير 2024، إضافة إلى سيو ozs.ae في 2026"},
    text:{en:"Ran brand presence on three platforms and optimized the ozs.ae service pages for on-page SEO. Instagram followers +25%, Facebook engagement +40%, and 100+ branded Canva designs.",ar:"إدارة حضور العلامة على ثلاث منصات وتحسين صفحات الخدمات في ozs.ae للسيو الداخلي. نمو متابعي إنستغرام 25% والتفاعل على فيسبوك 40%، وأكثر من 100 تصميم بهوية العلامة على Canva."},
    links:[
@@ -795,6 +940,10 @@ const EARLIER = [
 const PAA = [
   {q:{en:"Which roles are you open to?",ar:"ما الوظائف المناسبة؟"},
    a:{en:"Social Media Specialist or Manager, Digital Marketing Manager or Specialist, SEO Specialist or Lead, E-commerce and Performance Marketing, and Arabic Content Lead roles in the UAE.",ar:"أخصائي أو مدير سوشال ميديا، مدير أو أخصائي تسويق رقمي، أخصائي أو قائد سيو، تسويق المتاجر الإلكترونية والأداء، وقيادة المحتوى العربي في الإمارات."}},
+  {q:{en:"Can you work with my business?",ar:"هل يمكنك العمل مع شركتي؟"},
+   a:{en:"Yes, as a full-time hire or on a project or monthly basis. Send your website or account on WhatsApp and I'll reply with a first read of what I'd fix first.",ar:"نعم، بدوام كامل أو بمشروع أو باشتراك شهري. أرسل رابط موقعك أو حسابك على واتساب وأرد عليك بقراءة أولية لما سأصلحه أولًا."}},
+  {q:{en:"How do you use AI in content?",ar:"كيف تستخدم الذكاء الاصطناعي في المحتوى؟"},
+   a:{en:"As a production team I direct. I write the hooks and scene sheets, shoot or direct the real footage and approve every cut; AI does the editing, captions, motion graphics and approved voices. Generated visuals are labelled, and paid ads lean on real footage because it sells better.",ar:"كفريق إنتاج أديره. أكتب الافتتاحيات وجداول المشاهد، وأصوّر اللقطات الحقيقية أو أوجّه تصويرها، وأعتمد كل نسخة؛ ويتولى الذكاء الاصطناعي المونتاج والترجمة والموشن جرافيك والأصوات المعتمدة. والصور المولّدة يُشار إليها، والإعلانات المدفوعة تعتمد اللقطات الحقيقية لأنها تبيع أكثر."}},
   {q:{en:"Do you write in both Arabic and English?",ar:"هل الكتابة بالعربية والإنجليزية معًا؟"},
    a:{en:"Yes. Arabic is my native language and I write professional English. I have written website copy, product descriptions and SEO articles in both.",ar:"نعم. العربية لغتي الأم وأكتب الإنجليزية بمستوى مهني. كتبت محتوى مواقع وأوصاف منتجات ومقالات سيو باللغتين."}},
   {q:{en:"Which tools do you use every day?",ar:"ما الأدوات المستخدمة يوميًا؟"},
@@ -804,6 +953,8 @@ const PAA = [
 ];
 
 const TIMELINE = [
+  {when:{en:"Nov 2026 – present",ar:"نوفمبر 2026 – حتى الآن"},role:"Founder and Producer",org:{en:"Alat Mansiya, Arabic documentary channel · YouTube",ar:"آلات منسية، قناة وثائقية عربية · يوتيوب"}},
+  {when:{en:"Oct 2026 – Nov 2026",ar:"أكتوبر 2026 – نوفمبر 2026"},role:"Brand and Content (freelance)",org:{en:"Milana · UAE",ar:"ميلانا · الإمارات"}},
   {when:{en:"Oct 2024 – present",ar:"أكتوبر 2024 – حتى الآن"},role:"Digital Marketing and SEO Specialist (full-time)",org:{en:"Um Hamza Foodstuff · UAE",ar:"أم حمزة للمواد الغذائية · الإمارات"}},
   {when:{en:"Mar 2026 – Sep 2026",ar:"مارس 2026 – سبتمبر 2026"},role:"Brand and Digital Marketing Manager (freelance project)",org:{en:"Freshety, I A T Trading L.L.C · Dubai",ar:"فريشتي، I A T Trading L.L.C · دبي"}},
   {when:{en:"Apr 2026 – present",ar:"أبريل 2026 – حتى الآن"},role:"SEO Specialist (freelance)",org:{en:"OZONE Digital Solutions (ozs.ae) · Dubai",ar:"أوزون للحلول الرقمية (ozs.ae) · دبي"}},
@@ -817,7 +968,7 @@ const TIMELINE = [
 const SKILLS = [
   {h:{en:"Social media and video",ar:"السوشال ميديا والفيديو"},items:["Instagram Reels","TikTok","YouTube Shorts","Snapchat",{en:"Short-form editing",ar:"مونتاج الفيديو القصير"},{en:"Scene sheets and scripts",ar:"جداول المشاهد والنصوص"},{en:"Community management",ar:"إدارة المجتمع"},{en:"Creator collaborations",ar:"التعاون مع صنّاع المحتوى"},{en:"Content calendars",ar:"تقويم المحتوى"},{en:"Platform analytics",ar:"تحليلات المنصات"}]},
   {h:{en:"SEO",ar:"السيو"},items:["Technical SEO","On-page SEO","E-commerce SEO","Arabic SEO","Schema markup","Keyword research","Content audits","Core Web Vitals"]},
-  {h:{en:"Paid social and analytics",ar:"الإعلانات والتحليلات"},items:["Meta Ads","Catalog ads","Retargeting","GA4","Google Tag Manager","Meta Pixel","Google Search Console","Conversion tracking"]},
+  {h:{en:"Paid social and analytics",ar:"الإعلانات والتحليلات"},items:["Meta Ads","Catalog ads","Retargeting",{en:"Offer and bundle design",ar:"تصميم العروض والباقات"},"GA4","Google Tag Manager","Meta Pixel","Looker Studio","Google Search Console","Conversion tracking"]},
   {h:{en:"Content",ar:"المحتوى"},items:[{en:"Arabic copywriting",ar:"كتابة إعلانية بالعربية"},{en:"English copywriting",ar:"كتابة إعلانية بالإنجليزية"},{en:"SEO articles",ar:"مقالات سيو"},{en:"Product descriptions",ar:"أوصاف المنتجات"},{en:"Landing-page copy",ar:"نصوص صفحات الهبوط"},{en:"Content strategy",ar:"استراتيجية المحتوى"},{en:"Editorial QA",ar:"التدقيق التحريري"}]},
   {h:{en:"Platforms and tools",ar:"المنصات والأدوات"},items:["WordPress","WooCommerce","Shopify","Rank Math","Semrush","Ahrefs","Meta Business Suite","Canva"]}
 ];
@@ -833,15 +984,15 @@ const CERTS = [
 const PANEL = {
   name:{en:"Majd Salami",ar:"مجد سلامي"},
   initials:{en:"MS",ar:"م س"},
-  role:{en:"SEO, Content and Digital Marketing · Dubai",ar:"سيو، كتابة محتوى وتسويق رقمي · دبي"},
+  role:{en:"Meta Ads, SEO and Reels for UAE brands · Dubai",ar:"إعلانات Meta والسيو والريلز للعلامات في الإمارات · دبي"},
   desc:{
-    en:"10+ years in SEO and digital marketing. I grow UAE e-commerce brands with bilingual content, technical SEO, Meta Ads and clean conversion tracking.",
-    ar:"أكثر من 10 سنوات في السيو والتسويق الرقمي. أنمّي المتاجر الإلكترونية في الإمارات بمحتوى عربي وإنجليزي، وسيو تقني، وإعلانات Meta، وتتبّع دقيق للتحويلات."
+    en:"10+ years in SEO and digital marketing. I grow UAE brands with Meta Ads judged by real store orders, Arabic and English SEO, an AI-assisted reels studio and clean conversion tracking. Available full-time or per project.",
+    ar:"أكثر من 10 سنوات في السيو والتسويق الرقمي. أنمّي العلامات التجارية في الإمارات بإعلانات Meta يُحكم عليها بطلبات المتجر الفعلية، وسيو بالعربية والإنجليزية، واستوديو ريلز بالذكاء الاصطناعي، وتتبّع دقيق للتحويلات. متاح بدوام كامل أو بالمشروع."
   },
   facts:[
     {k:{en:"Based in",ar:"المقر"},v:{en:"Dubai, UAE",ar:"دبي، الإمارات"}},
     {k:{en:"Languages",ar:"اللغات"},v:{en:"Arabic (native), English (fluent)",ar:"العربية (اللغة الأم)، الإنجليزية (بطلاقة)"}},
-    {k:{en:"Focus",ar:"التركيز"},v:{en:"E-commerce, food retail, Arabic content",ar:"المتاجر الإلكترونية، قطاع الأغذية، المحتوى العربي"}},
+    {k:{en:"Focus",ar:"التركيز"},v:{en:"E-commerce, food retail, services, Arabic content",ar:"المتاجر الإلكترونية، قطاع الأغذية، الخدمات، المحتوى العربي"}},
     {k:{en:"Education",ar:"التعليم"},v:{en:"BSc Electrical Engineering, University of Aleppo",ar:"بكالوريوس هندسة كهربائية، جامعة حلب"}}
   ],
   contactH:{en:"Contact",ar:"التواصل"},
@@ -887,6 +1038,20 @@ function renderCases(){
 const PLAY_ICON = '<svg width="20" height="20" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>';
 const host = u => /instagram/.test(u) ? "Instagram" : /tiktok/.test(u) ? "TikTok" : /facebook/.test(u) ? "Facebook" : /youtu/.test(u) ? "YouTube" : "";
 
+function renderServices(){
+  document.getElementById("svcs").innerHTML = SERVICES.map((v,i) => `
+    <article class="svc">
+      <span class="num">0${i+1}</span>
+      <h3>${esc(t(v.t))}</h3>
+      <ul>${t(v.get).map(x => `<li>${esc(x)}</li>`).join("")}</ul>
+      <p class="proof"><strong>${esc(v.n)}</strong> ${esc(t(v.proof))}</p>
+      <div class="acts">
+        <a class="wa" href="${CONTACT.whatsapp}?text=${encodeURIComponent(t(v.wa))}" ${ext}>${esc(t(UI.waCta))}</a>
+        <a class="more" href="${v.href}">${esc(t(UI.seeProof))}</a>
+      </div>
+    </article>`).join("");
+}
+
 function renderReels(){
   document.getElementById("shorts").innerHTML = SHORTS.map(s => {
     const title = esc(t(s.title));
@@ -920,6 +1085,7 @@ function renderReels(){
       <p class="snippet">${rich(t(c.snippet))}</p>
       <div class="kpis" style="margin-top:0;margin-bottom:14px">${c.kpis.map(r => `<div class="kpi"><strong>${esc(r.n)}</strong><span>${esc(t(r))}</span></div>`).join("")}</div>
       <div class="sitelinks">${c.links.filter(l => l.url).map(l => `<a href="${l.url}" ${ext}><b>${esc(t(l))}</b><span>${esc(l.url.replace(/^https?:\/\/(www\.)?/,"").replace(/\/$/,""))}</span></a>`).join("")}</div>
+      ${c.deep ? `<a class="deep-link" href="#${c.deep}">${esc(t(UI.readCase))}</a>` : ""}
     </article>`).join("");
   document.getElementById("howto").innerHTML = t(HOWTO).map(x => `<li><span>${esc(x).replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")}</span></li>`).join("");
   document.getElementById("vtools").innerHTML = VTOOLS.map(x => `<span>${esc(x)}</span>`).join("");
@@ -1022,10 +1188,10 @@ function render(){
   app.dir = lang === "ar" ? "rtl" : "ltr";
   app.lang = lang;
   document.documentElement.lang = lang;
-  document.title = lang === "ar" ? "مجد سلامي | سيو وكتابة محتوى وتسويق رقمي في دبي" : "Majd Salami | SEO, Content & Digital Marketing in Dubai";
+  document.title = lang === "ar" ? "مجد سلامي | إعلانات Meta والسيو والريلز للعلامات في الإمارات" : "Majd Salami | Meta Ads, SEO & Reels for UAE Brands · Dubai";
   document.getElementById("btn-en").setAttribute("aria-pressed", lang === "en");
   document.getElementById("btn-ar").setAttribute("aria-pressed", lang === "ar");
-  renderStatic(); renderReels(); renderCases(); renderDeep(); renderSamples(); renderRest(); renderPanel();
+  renderStatic(); renderServices(); renderReels(); renderCases(); renderDeep(); renderSamples(); renderRest(); renderPanel();
 }
 
 function setLang(l){
